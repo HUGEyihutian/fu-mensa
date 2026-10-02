@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>FU Mensa 通关手册</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@600;900&family=Noto+Sans+SC:wght@400;500;700&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+/* Layout: one reading column; a day strip and canteen switch on top, menu as a till-receipt list, plan as a week ledger */
+:root{
+  --bg:#eef1ed;--paper:#fbfcf9;--fg:#1d2420;--muted:#5d6a62;--line:#d3dbd5;
+  --accent:#1f6b4a;--accent-soft:#dcebe2;--warn:#a4561b;--warn-soft:#f6e6d6;
+  --good:#2e7d4f;--mid:#b08a12;--bad:#b4442c;
+  --display:"Noto Serif SC","Songti SC",serif;--body:"Noto Sans SC","PingFang SC","Microsoft YaHei",sans-serif;--mono:"JetBrains Mono",ui-monospace,Menlo,monospace;
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#141a17;--paper:#1c2420;--fg:#e4ebe6;--muted:#9aa89f;--line:#2f3b35;--accent:#6cc79c;--accent-soft:#213a2e;--warn:#e2a06a;--warn-soft:#3a2a1d;--good:#6cc79c;--mid:#d9b84a;--bad:#e58a72;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#141a17;--paper:#1c2420;--fg:#e4ebe6;--muted:#9aa89f;--line:#2f3b35;--accent:#6cc79c;--accent-soft:#213a2e;--warn:#e2a06a;--warn-soft:#3a2a1d;--good:#6cc79c;--mid:#d9b84a;--bad:#e58a72;color-scheme:dark}
+*{box-sizing:border-box}
+html{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--body);font-size:15px;line-height:1.7;padding:0 16px}
+.wrap{max-width:900px;margin:0 auto;padding-block:28px 64px;display:flex;flex-direction:column;gap:22px}
+h1,h2{font-family:var(--display);text-wrap:balance;line-height:1.3;margin:0}
+h1{font-size:clamp(28px,5.5vw,40px);font-weight:900}
+h2{font-size:21px}
+h3{font-size:15.5px;margin:0}
+p{margin:0;max-width:70ch}
+a{color:var(--accent);text-underline-offset:3px}
+.muted{color:var(--muted)}.small{font-size:13px}
+.mono{font-family:var(--mono);font-variant-numeric:tabular-nums}
+header{display:flex;flex-direction:column;gap:8px}
+.status{font-size:13px;color:var(--muted)}
+nav.tabs{display:flex;flex-wrap:wrap;gap:6px;border-bottom:1px solid var(--line);padding-bottom:10px;position:sticky;top:env(safe-area-inset-top,0px);background:var(--bg);z-index:5;padding-top:8px}
+nav.tabs button{font:inherit;font-size:14px;border:1px solid var(--line);background:var(--paper);color:var(--fg);padding:5px 14px;border-radius:999px;cursor:pointer}
+nav.tabs button[aria-selected="true"]{background:var(--accent);border-color:var(--accent);color:var(--paper)}
+button:focus-visible,select:focus-visible,input:focus-visible,textarea:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.bar{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.days{display:flex;gap:6px;overflow-x:auto;padding-bottom:4px}
+.days button{font:inherit;font-size:13px;border:1px solid var(--line);background:var(--paper);color:var(--fg);padding:6px 10px;border-radius:6px;cursor:pointer;white-space:nowrap;display:flex;flex-direction:column;align-items:center;line-height:1.3;min-width:58px}
+.days button b{font-family:var(--mono);font-size:15px}
+.days button[aria-pressed="true"]{border-color:var(--accent);background:var(--accent-soft)}
+.days button.today b{color:var(--accent)}
+.days .sep{width:1px;background:var(--line);margin:0 4px;flex:none}
+select,input[type=number],input[type=text],textarea{font:inherit;font-size:14px;padding:5px 8px;border:1px solid var(--line);border-radius:5px;background:var(--paper);color:var(--fg)}
+.panel[hidden]{display:none}
+.menu{display:flex;flex-direction:column;gap:18px}
+.grp h3{font-size:13px;color:var(--muted);font-weight:500;letter-spacing:.06em;border-bottom:1px solid var(--line);padding-bottom:4px;margin-bottom:4px}
+.dish{display:grid;grid-template-columns:10px 1fr auto auto;gap:10px;align-items:start;padding:7px 0;border-bottom:1px dashed var(--line)}
+.dish:last-child{border-bottom:none}
+.dot{width:9px;height:9px;border-radius:50%;margin-top:8px;background:var(--line)}
+.dot.gruen{background:var(--good)}.dot.gelb{background:var(--mid)}.dot.rot{background:var(--bad)}
+.dname{min-width:0}
+.dname .meta{font-size:12px;color:var(--muted)}
+.price{font-family:var(--mono);font-variant-numeric:tabular-nums;font-size:14px;text-align:right;white-space:nowrap}
+.fb{display:flex;gap:2px}
+.fb button{border:1px solid transparent;background:none;color:var(--muted);cursor:pointer;font-size:14px;padding:2px 5px;border-radius:4px;line-height:1}
+.fb button[aria-pressed="true"].up{color:var(--good);border-color:var(--good)}
+.fb button[aria-pressed="true"].down{color:var(--bad);border-color:var(--bad)}
+.empty{background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:18px;color:var(--muted)}
+.combo{background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:14px 16px;display:flex;flex-direction:column;gap:8px}
+.combo.best{border-color:var(--accent)}
+.combo .row{display:flex;justify-content:space-between;gap:12px;align-items:baseline}
+.combo ul{margin:0;padding-left:18px}
+.combo .why{font-size:13px;color:var(--muted)}
+.btn{font:inherit;font-size:13.5px;border:1px solid var(--accent);background:var(--accent);color:var(--paper);padding:5px 12px;border-radius:5px;cursor:pointer;align-self:flex-start}
+.btn.ghost{background:none;color:var(--accent)}
+.ledger{width:100%;border-collapse:collapse;font-size:14px}
+.ledger td,.ledger th{padding:9px 10px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+.ledger th{font-weight:500;color:var(--muted);font-size:12.5px}
+.tblwrap{overflow-x:auto;background:var(--paper);border:1px solid var(--line);border-radius:6px}
+.note{background:var(--warn-soft);border-left:3px solid var(--warn);padding:10px 14px;border-radius:4px;font-size:14px;max-width:none}
+.form{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+.form label{display:flex;flex-direction:column;gap:4px;font-size:13.5px;color:var(--muted)}
+textarea{width:100%;min-height:120px;font-family:var(--mono);font-size:12.5px}
+.guide{display:flex;flex-direction:column;gap:22px}
+.guide section{display:flex;flex-direction:column;gap:10px}
+.guide ol{margin:0;padding-left:22px;display:flex;flex-direction:column;gap:8px;max-width:70ch}
+.src{font-size:12.5px;color:var(--muted)}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <h1>FU Mensa 通关手册</h1>
+  <p class="muted">柏林自由大学六个食堂的本周与下周菜单，直接取自 studierendenWERK BERLIN 官网，每天自动刷新。可以按日期看菜、让模型给出搭配、把每天吃什么排进计划，并用 👍/👎 让模型慢慢学会你的口味。</p>
+  <div class="status" id="status">正在载入菜单…</div>
+</header>
+
+<nav class="tabs" role="tablist">
+  <button role="tab" data-tab="menu" aria-selected="true">菜单</button>
+  <button role="tab" data-tab="combo" aria-selected="false">推荐搭配</button>
+  <button role="tab" data-tab="plan" aria-selected="false">我的一周</button>
+  <button role="tab" data-tab="model" aria-selected="false">模型与反馈</button>
+  <button role="tab" data-tab="guide" aria-selected="false">入门手册</button>
+</nav>
+
+<div class="bar" id="pickers">
+  <select id="canteen" aria-label="食堂"></select>
+  <select id="tier" aria-label="价格档">
+    <option value="student">学生价</option><option value="staff">员工价</option><option value="guest">访客价</option>
+  </select>
+  <select id="diet" aria-label="饮食">
+    <option value="all">全部</option><option value="vegetarisch">素食及以上</option><option value="vegan">纯素</option>
+  </select>
+</div>
+<div class="days" id="days"></div>
+
+<section class="panel" id="p-menu"><div class="menu" id="menu"></div></section>
+
+<section class="panel" id="p-combo" hidden>
+  <div class="bar small">
+    <label>预算 <input id="budget" type="number" step="0.25" min="0" style="width:80px"> €</label>
+    <label>饱腹目标 <input id="target" type="number" step="0.5" min="1" style="width:70px"></label>
+    <span class="muted">（一份主菜约 3.5，一份米饭土豆约 2）</span>
+  </div>
+  <div id="combos" style="display:flex;flex-direction:column;gap:12px;margin-top:12px"></div>
+</section>
+
+<section class="panel" id="p-plan" hidden>
+  <div class="tblwrap"><table class="ledger" id="ledger"></table></div>
+  <p class="small muted" style="margin-top:8px">计划只保存在这台设备的浏览器里。换设备时用“模型与反馈”里的导出。</p>
+</section>
+
+<section class="panel" id="p-model" hidden>
+  <div style="display:flex;flex-direction:column;gap:16px">
+    <p>模型做的事很简单：对当天每一种“主菜 + 至多两样配菜 + 至多一样汤/沙拉/甜点”的组合，估一个饱腹分，然后按下面的公式打分，取前三。</p>
+    <p class="mono small" style="background:var(--paper);border:1px solid var(--line);padding:10px 12px;border-radius:5px;overflow-x:auto">score = 饱腹(封顶到目标) − 超出目标的部分×0.6 − 价格×1.2 + 喜好 + 交通灯 + CO₂</p>
+    <p>喜好有两个来源。一是你在菜单上点的 👍/👎：对整道菜记一票，同时拆出菜名里的关键词，各记小一点的一票，这样“喜欢 Linsen-Bratling”也会让其他带 Linsen 的菜略微加分。二是下面这两栏手写的长期偏好。所有参数都在仓库的 <span class="mono">docs/data/model.json</span> 里，想改权重或饱腹估计，直接改那个文件，或者把反馈导出发给 Claude 让它改。</p>
+    <div class="form">
+      <label>喜欢的词（逗号分隔）<input id="likes" type="text" placeholder="Linsen, Curry, Kartoffelpüree"></label>
+      <label>不喜欢的词<input id="dislikes" type="text" placeholder="Rote Bete, Grießbrei"></label>
+      <label>排除过敏原（官方编号，逗号分隔）<input id="allergens" type="text" placeholder="例如 22, 24（甲壳类、鱼）"></label>
+    </div>
+    <div class="bar"><button class="btn" id="exportBtn">复制导出（反馈 + 偏好 + 计划）</button><button class="btn ghost" id="importBtn">从下面粘贴导入</button><span id="ioMsg" class="small muted"></span></div>
+    <textarea id="io" aria-label="导入导出" placeholder="点击复制导出后，这里会出现你的反馈 JSON。"></textarea>
+    <p class="small muted">本地已记录 <span id="fbCount">0</span> 条菜品反馈。</p>
+  </div>
+</section>
+
+<section class="panel" id="p-guide" hidden><div class="guide">
+  <section>
+    <h2>计价方式</h2>
+    <p>柏林的 Mensa 不称重，每一样都单独标价，分学生、员工、访客三档。官网菜单上每道菜后面的三个数字就是这三档价格，例如 <span class="mono">€ 1,75/3,50/4,05</span>。主菜（Essen）的学生价通常在 1,75 到 2,50 € 之间，米饭土豆蔬菜这类配菜（Beilagen）在 0,75 到 0,95 €，汤、小沙拉和甜点多为 0,75 €，酱汁和番茄酱 0,15 到 0,30 €。员工价和访客价并不是固定倍数，主菜大约是学生价的两倍多，Aktionen（现做档、披萨、意面）的差价则小得多。</p>
+    <p>由此得出的结论比较朴素：在学生价下，最便宜的一份主菜加一份淀粉配菜，大约 2,50 € 就能吃饱；Aktionen 和 Salatteller Spezial 单价高，适合想换口味的时候。“推荐搭配”就是把这个想法交给当天的真实菜单去算。</p>
+  </section>
+  <section>
+    <h2>MensaCard</h2>
+    <p>Studierendenwerk 的食堂和 Coffeebar 只收 MensaCard。卡在收银台办，押金 1,55 €，办卡时出示学生证明才是学生价。食堂入口有充值机，也可以请工作人员开通从银行账户自动充值的 Autoload。</p>
+    <p class="src">出处：<a href="https://fu-berlin.de/en/sites/abt-1/referate/1c/welcome-service/einstieg/organisation-struktur/mensen-und-campus.html" target="_blank" rel="noopener">FU Welcome Service</a>，原文：“You can obtain a MensaCard from one of the cafeteria cashiers for a deposit of 1.55 euros plus however much money you want to load onto the card initially.”</p>
+  </section>
+  <section>
+    <h2>六个有菜单的食堂</h2>
+    <div class="tblwrap"><table class="ledger" id="canteenTable"></table></div>
+    <p class="src">营业时间取自各食堂官网页面（2026 年 10 月 2 日查看），学期中和假期会变，以官网为准。此外 FU II 旁的 Garystraße 和 Shokudō 各有一台 Mensa-Späti 自动售卖机，按楼的开放时间供应热食；法学楼的 Backshop 目前标为 geschlossen。我之前版本里写的 Veggie No. 1 已不在官网的 FU 食堂列表里。</p>
+  </section>
+  <section>
+    <h2>容易忽略的事</h2>
+    <ol>
+      <li>菜单上的交通灯（绿、黄、红）是 Studierendenwerk 自己的营养评级，绿色表示“je öfter, desto besser”。这个页面里每道菜前面的小圆点就是它。</li>
+      <li>汤、甜点前面的“1-”“2-”是当天的编号，不是价格。“1/2-”开头的是半份。</li>
+      <li>过敏原和添加剂用数字编号，例如 21a 小麦、22 甲壳类、24 鱼、28 大豆。完整表在官网菜单的“Zusatzstoffe / Allergene”按钮里。</li>
+      <li>Mensa FU II 午饭 11:00–14:30，之后只剩 Backshop 和自动售卖机。错过饭点前看一眼计划。</li>
+      <li>图书馆里只能带拧紧盖子的饮料，吃东西要在食堂或咖啡馆。</li>
+    </ol>
+  </section>
+  <section>
+    <h2>数据怎么来的</h2>
+    <p>仓库里的脚本每天清晨请求官网本身用来切换日期标签的接口（<span class="mono">stw.berlin/xhr/speiseplan-wochentag.html</span>），取本周和下周所有工作日的菜单，存成 <span class="mono">data/menus.json</span>。页面打开时读的就是这份文件，所以你看到的永远是最近一次抓取的结果，抓取时间写在页面顶部。官网通常在周末前后放出下一周的菜单。</p>
+  </section>
+</div></section>
+</div>
+
+<script>
+(async function(){
+const $=s=>document.querySelector(s);
+const LS={get(k,d){try{const v=localStorage.getItem("fum."+k);return v?JSON.parse(v):d}catch(e){return d}},set(k,v){try{localStorage.setItem("fum."+k,JSON.stringify(v))}catch(e){}}};
+async function load(name,inline){if(window[inline])return window[inline];const r=await fetch("data/"+name+"?t="+Date.now());if(!r.ok)throw new Error(name+" "+r.status);return r.json()}
+let MENUS,MODEL,COMMITTED;
+try{[MENUS,MODEL,COMMITTED]=await Promise.all([load("menus.json","__MENUS"),load("model.json","__MODEL"),load("feedback.json","__FEEDBACK").catch(()=>({dishes:{},words:{}}))])}
+catch(e){$("#status").textContent="菜单没能载入："+e.message+"。刷新一下试试。";return}
+
+const st=Object.assign({tab:"menu",canteen:MENUS.canteens[0].id,tier:MODEL.defaults.tier,diet:MODEL.defaults.diet,budget:MODEL.defaults.budget_eur,target:MODEL.defaults.target_fill,likes:"",dislikes:"",allergens:""},LS.get("state",{}));
+let FB=LS.get("fb",{dishes:{}});let PLAN=LS.get("plan",{});
+const save=()=>{LS.set("state",st);LS.set("fb",FB);LS.set("plan",PLAN)};
+const fmt=x=>x==null?"–":x.toFixed(2).replace(".",",")+" €";
+const WD=["So","Mo","Di","Mi","Do","Fr","Sa"];
+const todayISO=new Date(Date.now()-new Date().getTimezoneOffset()*6e4).toISOString().slice(0,10);
+const allDates=Object.keys(MENUS.canteens[0].days).sort();
+if(!st.date||!allDates.includes(st.date))st.date=allDates.find(d=>d>=todayISO)||allDates[0];
+
+const gen=new Date(MENUS.generated_at);
+const ageH=(Date.now()-gen)/36e5;
+$("#status").innerHTML=`数据来自 <a href="https://www.stw.berlin" target="_blank" rel="noopener">stw.berlin</a> · 最近抓取 ${gen.toLocaleString("de-DE",{dateStyle:"medium",timeStyle:"short"})}`+(ageH>48?` · <b style="color:var(--warn)">已超过两天没更新，可能是自动任务出了问题</b>`:"");
+
+/* pickers */
+$("#canteen").innerHTML=MENUS.canteens.map(c=>`<option value="${c.id}">${c.name}</option>`).join("");
+for(const k of ["canteen","tier","diet"]){const el=$("#"+k);el.value=st[k];el.onchange=()=>{st[k]=k==="canteen"?+el.value:el.value;save();render()}}
+for(const k of ["budget","target"]){const el=$("#"+k);el.value=st[k];el.oninput=()=>{st[k]=parseFloat(el.value)||0;save();renderCombos()}}
+for(const k of ["likes","dislikes","allergens"]){const el=$("#"+k);el.value=st[k];el.oninput=()=>{st[k]=el.value;save()}}
+document.querySelectorAll("nav.tabs button").forEach(b=>b.onclick=()=>{st.tab=b.dataset.tab;save();render()});
+
+const canteen=()=>MENUS.canteens.find(c=>c.id===st.canteen)||MENUS.canteens[0];
+const words=s=>s.toLowerCase().normalize("NFC").split(/[^a-zäöüß]+/).filter(w=>w.length>=4);
+const list=s=>(s||"").split(",").map(x=>x.trim().toLowerCase()).filter(Boolean);
+
+function dietOk(m){if(st.diet==="vegan")return m.flags.includes("vegan");if(st.diet==="vegetarisch")return m.flags.includes("vegan")||m.flags.includes("vegetarisch");return true}
+function allergenOk(m){const ex=[...list(st.allergens),...(MODEL.preferences.exclude_allergens||[]).map(String)];return !m.codes.some(c=>ex.includes(c.toLowerCase()))}
+function fill(m){const n=m.name.toLowerCase();for(const r of MODEL.fill_rules.keywords){if(r.group&&r.group!==m.group)continue;if(r.match.some(k=>n.includes(k)))return r.fill}return MODEL.fill_rules.groups[m.group]??1}
+function liking(m){
+  const S=MODEL.score;let s=0;const n=m.name.toLowerCase();
+  const d=(FB.dishes[m.name]||0)+((COMMITTED.dishes||{})[m.name]||0);s+=S.dish_like*d;
+  const wv={};for(const [name,v] of Object.entries(FB.dishes))for(const w of words(name))wv[w]=(wv[w]||0)+v;
+  for(const [w,v] of Object.entries(COMMITTED.words||{}))wv[w.toLowerCase()]=(wv[w.toLowerCase()]||0)+v;
+  for(const w of words(m.name))if(wv[w])s+=S.keyword_like*0.4*Math.sign(wv[w])*Math.min(2,Math.abs(wv[w]));
+  for(const w of [...list(st.likes),...MODEL.preferences.like.map(x=>x.toLowerCase())])if(n.includes(w))s+=S.keyword_like;
+  for(const w of [...list(st.dislikes),...MODEL.preferences.dislike.map(x=>x.toLowerCase())])if(n.includes(w))s-=S.keyword_like*2;
+  return s}
+const priceOf=m=>m.price?(m.price[st.tier]??m.price.student):null;
+const dayMeals=()=>(canteen().days[st.date]||[]).filter(m=>priceOf(m)!=null);
+
+function renderDays(){
+  const c=canteen();let html="",prevMon=null;
+  for(const d of allDates){const dt=new Date(d+"T12:00");const mon=d<MENUS.week_start?0:Math.floor((dt-new Date(MENUS.week_start+"T12:00"))/(7*864e5));
+    if(prevMon!==null&&mon!==prevMon)html+='<span class="sep"></span>';prevMon=mon;
+    const n=(c.days[d]||[]).length;
+    html+=`<button data-d="${d}" aria-pressed="${d===st.date}" class="${d===todayISO?"today":""}" ${n?"":'title="暂无菜单"'}><span>${WD[dt.getDay()]}${PLAN[d]?" ✓":""}</span><b>${d.slice(8)}.${d.slice(5,7)}</b>${n?"":'<span class="small muted">—</span>'}</button>`}
+  $("#days").innerHTML=html;
+  $("#days").querySelectorAll("button").forEach(b=>b.onclick=()=>{st.date=b.dataset.d;save();render()});
+}
+
+function renderMenu(){
+  const meals=dayMeals();
+  if(!meals.length){$("#menu").innerHTML=`<div class="empty">${canteen().name} 这一天在官网上没有菜单（休息日，或者下周的菜单还没发布）。可以换个食堂或日期看看。</div>`;return}
+  const groups=[...new Set(meals.map(m=>m.group))];
+  $("#menu").innerHTML=groups.map(g=>`<div class="grp"><h3>${g}</h3>${meals.filter(m=>m.group===g).map((m,i)=>{
+    const ok=dietOk(m)&&allergenOk(m);const v=FB.dishes[m.name]||0;
+    const meta=[m.flags.includes("vegan")?"vegan":m.flags.includes("vegetarisch")?"vegetarisch":"",m.co2_g&&m.co2_g<5000?Math.round(m.co2_g)+" g CO₂":"",m.codes.length?"("+m.codes.join(", ")+")":""].filter(Boolean).join(" · ");
+    return `<div class="dish" style="${ok?"":"opacity:.4"}"><span class="dot ${m.ampel||""}" title="${m.ampel||""}"></span><div class="dname">${m.name}<div class="meta">${meta}</div></div><div class="price">${fmt(priceOf(m))}</div><div class="fb" data-n="${encodeURIComponent(m.name)}"><button class="up" aria-pressed="${v>0}" aria-label="喜欢">👍</button><button class="down" aria-pressed="${v<0}" aria-label="不喜欢">👎</button></div></div>`}).join("")}</div>`).join("")+`<p class="src">原始菜单：<a href="${canteen().url}" target="_blank" rel="noopener">${canteen().name} · stw.berlin</a>。半透明的菜不符合你选的饮食或过敏原设置。</p>`;
+  $("#menu").querySelectorAll(".fb").forEach(el=>{const n=decodeURIComponent(el.dataset.n);
+    el.querySelector(".up").onclick=()=>{FB.dishes[n]=(FB.dishes[n]||0)>0?0:1;if(!FB.dishes[n])delete FB.dishes[n];save();renderMenu()};
+    el.querySelector(".down").onclick=()=>{FB.dishes[n]=(FB.dishes[n]||0)<0?0:-1;if(!FB.dishes[n])delete FB.dishes[n];save();renderMenu()}});
+}
+
+function combos(meals){
+  const R=MODEL.roles,S=MODEL.score;
+  const ok=meals.filter(m=>dietOk(m)&&allergenOk(m));
+  const cores=ok.filter(m=>R.core_groups.includes(m.group)&&fill(m)>=R.core_min_fill);
+  const sides=ok.filter(m=>m.group==="Beilagen"&&fill(m)>0);
+  const extras=ok.filter(m=>R.extra_groups.includes(m.group)&&fill(m)>0);
+  const out=[];
+  const sideSets=[[]];for(let i=0;i<sides.length;i++){sideSets.push([sides[i]]);if(R.max_sides>1)for(let j=i+1;j<sides.length;j++)sideSets.push([sides[i],sides[j]])}
+  const extraSets=[[],...extras.map(e=>[e])];
+  const P=MODEL.pairing||{sweet:[],starchy:[],starch_side_words:[]};
+  const has=(m,arr)=>arr.some(k=>m.name.toLowerCase().includes(k));
+  for(const c of cores)for(const s of sideSets)for(const e of extraSets){
+    const sweet=has(c,P.sweet);if(sweet&&s.length)continue;
+    const items=[c,...s,...e];const price=items.reduce((a,m)=>a+priceOf(m),0);if(price>st.budget+1e-9)continue;
+    const starchy=has(c,P.starchy);let starchSides=0;
+    const f=items.reduce((a,m)=>{let v=fill(m);if(m.group==="Beilagen"&&has(m,P.starch_side_words)){starchSides++;if(starchy||starchSides>1)v*=0.5}if(m===c&&sweet)v*=(P.sweet_fill_factor??1);return a+v},0);
+    const like=items.reduce((a,m)=>a+liking(m),0);
+    const amp=items.reduce((a,m)=>a+(S.ampel[m.ampel]||0),0)/items.length;
+    const co2=items.reduce((a,m)=>a+(m.co2_g&&m.co2_g<5000?m.co2_g:0),0);
+    const score=S.fill_weight*Math.min(f,st.target)-S.overshoot*Math.max(0,f-st.target)-S.price_weight*price+like+amp+S.co2_per_100g*co2/100;
+    out.push({items,price,fill:f,like,score});
+  }
+  out.sort((a,b)=>b.score-a.score);
+  const seen=new Set(),top=[];for(const o of out){if(seen.has(o.items[0].name))continue;seen.add(o.items[0].name);top.push(o);if(top.length===3)break}
+  return top;
+}
+function renderCombos(){
+  const meals=dayMeals();const el=$("#combos");
+  if(!meals.length){el.innerHTML=`<div class="empty">这一天没有菜单，没法搭配。</div>`;return}
+  const top=combos(meals);
+  if(!top.length){el.innerHTML=`<div class="empty">在 ${fmt(st.budget)} 的预算和当前饮食设置下凑不出一份完整的饭。把预算调高一点试试。</div>`;return}
+  el.innerHTML=top.map((o,i)=>`<div class="combo ${i?"":"best"}"><div class="row"><h3>${i?"备选 "+i:"首选"}</h3><span class="mono">${fmt(o.price)}</span></div>
+    <ul>${o.items.map(m=>`<li>${m.name} <span class="muted small mono">${fmt(priceOf(m))}</span></li>`).join("")}</ul>
+    <div class="why">饱腹约 ${o.fill.toFixed(1)}（目标 ${st.target}）${o.like>0.05?" · 含你喜欢的菜或词":o.like<-0.05?" · 含你不太喜欢的东西":""} · 得分 ${o.score.toFixed(2)}</div>
+    <button class="btn ${PLAN[st.date]&&PLAN[st.date].key===key(o)?"ghost":""}" data-i="${i}">${PLAN[st.date]&&PLAN[st.date].key===key(o)?"已排进计划":"排进 "+st.date.slice(8)+"."+st.date.slice(5,7)+" 的计划"}</button></div>`).join("");
+  el.querySelectorAll("button[data-i]").forEach(b=>b.onclick=()=>{const o=top[+b.dataset.i];PLAN[st.date]={key:key(o),canteen:canteen().name,items:o.items.map(m=>({name:m.name,price:priceOf(m)})),price:o.price};save();renderCombos();renderDays()});
+}
+const key=o=>o.items.map(m=>m.name).join("|");
+
+function renderPlan(){
+  let total=0,rows="";
+  for(const d of allDates){const p=PLAN[d];const dt=new Date(d+"T12:00");if(p)total+=p.price;
+    rows+=`<tr><td class="mono">${WD[dt.getDay()]} ${d.slice(8)}.${d.slice(5,7)}</td><td>${p?`<b>${p.canteen}</b><br>${p.items.map(i=>i.name).join(" + ")}`:'<span class="muted">还没安排</span>'}</td><td class="mono" style="text-align:right">${p?fmt(p.price):""}</td><td>${p?`<button class="btn ghost" data-d="${d}">移除</button>`:""}</td></tr>`}
+  $("#ledger").innerHTML=`<thead><tr><th>日期</th><th>吃什么</th><th style="text-align:right">价格</th><th></th></tr></thead><tbody>${rows}<tr><td></td><td><b>合计</b></td><td class="mono" style="text-align:right"><b>${fmt(total)}</b></td><td></td></tr></tbody>`;
+  $("#ledger").querySelectorAll("button[data-d]").forEach(b=>b.onclick=()=>{delete PLAN[b.dataset.d];save();renderPlan();renderDays()});
+}
+
+function renderCanteenTable(){
+  const H={322:"Mo–Fr 11:00–17:00，午饭 11:00–14:30，Backshop 08:00–17:00",323:"Mo–Fr 11:00–15:00，午饭 11:00–14:30",542:"Mo–Fr 08:00–15:00，午饭 11:00–14:30",660:"Mo–Fr 08:00–15:00，午饭 11:00–14:30",271:"Mo–Fr 08:00–15:00，午饭 11:00–14:30",528:"Mo–Fr 08:00–14:30，午饭 11:00–14:30"};
+  $("#canteenTable").innerHTML=`<thead><tr><th>食堂</th><th>位置</th><th>营业时间</th></tr></thead><tbody>${MENUS.canteens.map(c=>`<tr><td><a href="${c.url}" target="_blank" rel="noopener">${c.name}</a></td><td>${c.where}<br><span class="muted small">${c.campus}</span></td><td class="small">${H[c.id]||""}</td></tr>`).join("")}</tbody>`;
+}
+
+$("#exportBtn").onclick=async()=>{
+  const wv={};for(const [n,v] of Object.entries(FB.dishes))for(const w of words(n))wv[w]=(wv[w]||0)+v;
+  const out={exported_at:new Date().toISOString(),dishes:FB.dishes,words:Object.fromEntries(Object.entries(wv).filter(([,v])=>v)),preferences:{like:list(st.likes),dislike:list(st.dislikes),exclude_allergens:list(st.allergens)},settings:{budget:st.budget,target:st.target,diet:st.diet,tier:st.tier},plan:PLAN};
+  const txt=JSON.stringify(out,null,1);$("#io").value=txt;
+  try{await navigator.clipboard.writeText(txt);$("#ioMsg").textContent="已复制。"}catch(e){$("#io").select();$("#ioMsg").textContent="浏览器不允许自动复制，已选中文本，手动复制即可。"}
+};
+$("#importBtn").onclick=()=>{try{const o=JSON.parse($("#io").value);if(o.dishes)FB.dishes=o.dishes;if(o.plan)PLAN=o.plan;if(o.preferences){st.likes=(o.preferences.like||[]).join(", ");st.dislikes=(o.preferences.dislike||[]).join(", ");st.allergens=(o.preferences.exclude_allergens||[]).join(", ")}if(o.settings)Object.assign(st,o.settings);save();$("#ioMsg").textContent="已导入。";location.reload()}catch(e){$("#ioMsg").textContent="这段文字不是有效的导出内容："+e.message}};
+
+function render(){
+  document.querySelectorAll("nav.tabs button").forEach(b=>b.setAttribute("aria-selected",b.dataset.tab===st.tab));
+  for(const t of ["menu","combo","plan","model","guide"])$("#p-"+t).hidden=t!==st.tab;
+  const showPick=["menu","combo"].includes(st.tab);$("#pickers").hidden=!showPick;$("#days").hidden=!showPick;
+  $("#fbCount").textContent=Object.keys(FB.dishes).length;
+  renderDays();renderMenu();renderCombos();renderPlan();
+}
+renderCanteenTable();render();
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,179 @@
+{
+  "_doc": "Selection model for FU Mensa. Edit values here (or ask Claude to) to change how combinations are ranked. All weights are plain numbers; the page reads this file on every load.",
+  "version": 2,
+  "defaults": {
+    "budget_eur": 3.5,
+    "target_fill": 5,
+    "diet": "all",
+    "tier": "student"
+  },
+  "fill_rules": {
+    "_doc": "Estimated fullness points per item. First matching rule wins: keyword rules (case-insensitive, matched against the dish name), then the group default.",
+    "keywords": [
+      {
+        "match": [
+          "sauce & dip",
+          "ketchup",
+          "mayonnaise",
+          "veganer käse",
+          "dressing",
+          "dip extra"
+        ],
+        "fill": 0
+      },
+      {
+        "match": [
+          "1/2 "
+        ],
+        "fill": 1.5
+      },
+      {
+        "match": [
+          "reis",
+          "kartoffel",
+          "püree",
+          "nudel",
+          "pasta",
+          "spätzle",
+          "bulgur",
+          "couscous",
+          "pommes",
+          "polenta",
+          "quinoa",
+          "brot"
+        ],
+        "group": "Beilagen",
+        "fill": 2
+      },
+      {
+        "match": [
+          "pommes frites"
+        ],
+        "fill": 2
+      },
+      {
+        "match": [
+          "große salatschale"
+        ],
+        "fill": 2
+      },
+      {
+        "match": [
+          "kleine salatschale"
+        ],
+        "fill": 0.7
+      },
+      {
+        "match": [
+          "salatteller spezial",
+          "bowl"
+        ],
+        "fill": 3
+      },
+      {
+        "match": [
+          "pizza",
+          "burger",
+          "wrap",
+          "pasta mit"
+        ],
+        "fill": 4
+      }
+    ],
+    "groups": {
+      "Essen": 3.5,
+      "Aktionen": 3.5,
+      "Beilagen": 1,
+      "Suppen": 1,
+      "Salate": 1,
+      "Vorspeisen": 1.5,
+      "Desserts": 0.6
+    }
+  },
+  "roles": {
+    "_doc": "Which groups can be the core of a tray, and how many extras of each kind a combination may add.",
+    "core_groups": [
+      "Essen",
+      "Aktionen",
+      "Vorspeisen"
+    ],
+    "core_min_fill": 2.5,
+    "max_sides": 2,
+    "max_extras": 1,
+    "extra_groups": [
+      "Suppen",
+      "Salate",
+      "Desserts"
+    ]
+  },
+  "score": {
+    "_doc": "score = fill_weight*min(fill,target) - overshoot*max(0,fill-target) - price_weight*price + liking + ampel + co2. Higher is better.",
+    "fill_weight": 1.0,
+    "overshoot": 0.6,
+    "price_weight": 1.2,
+    "ampel": {
+      "gruen": 0.3,
+      "gelb": 0,
+      "rot": -0.4
+    },
+    "co2_per_100g": -0.05,
+    "keyword_like": 0.8,
+    "dish_like": 1.5,
+    "missing_main_penalty": 2
+  },
+  "preferences": {
+    "_doc": "Your standing tastes. Words are matched inside dish names. Add to these after you've eaten a few times.",
+    "like": [],
+    "dislike": [],
+    "exclude_allergens": []
+  },
+  "pairing": {
+    "_doc": "Rules about which cores take sides. sweet: core is a sweet dish, no savoury sides allowed. starchy: core already contains rice/pasta/potato, so an extra starch side only counts half. sweet_fill_factor: sweet mains fill less than savoury ones.",
+    "sweet": [
+      "grießbrei",
+      "milchreis",
+      "crêpe",
+      "crepe",
+      "pfannkuchen",
+      "kaiserschmarrn",
+      "waffel",
+      "germknödel",
+      "dampfnudel",
+      "pudding",
+      "apfelstrudel"
+    ],
+    "starchy": [
+      "reis",
+      "pasta",
+      "nudel",
+      "spätzle",
+      "kartoffel",
+      "pfanne",
+      "pizza",
+      "burger",
+      "lasagne",
+      "risotto",
+      "gnocchi",
+      "bowl",
+      "eintopf",
+      "couscous",
+      "bulgur",
+      "quinoa"
+    ],
+    "starch_side_words": [
+      "reis",
+      "kartoffel",
+      "püree",
+      "nudel",
+      "pasta",
+      "spätzle",
+      "bulgur",
+      "couscous",
+      "pommes",
+      "polenta",
+      "quinoa",
+      "brot"
+    ],
+    "sweet_fill_factor": 0.7
+  }
+}

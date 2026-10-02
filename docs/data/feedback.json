@@ -1,0 +1,5 @@
+{
+  "_doc": "Committed feedback. Export from the page (Feedback → Export) and paste it here, or send it to Claude. Dish names are exact; words are partial matches. +1 = liked, -1 = disliked.",
+  "dishes": {},
+  "words": {}
+}
