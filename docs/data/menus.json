@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-13T21:27:17+00:00",
+ "generated_at": "2026-11-14T10:36:03+00:00",
  "source": "https://www.stw.berlin (studierendenWERK BERLIN, official)",
  "week_start": "2026-11-09",
  "canteens": [
@@ -250,28 +250,6 @@
      },
      {
       "group": "Aktionen",
-      "name": "Tomatenketchup",
-      "price": {
-       "student": 0.15,
-       "staff": 0.2,
-       "guest": 0.25
-      },
-      "codes": [
-       "29"
-      ],
-      "allergens": [
-       "Senf"
-      ],
-      "flags": [
-       "vegan"
-      ],
-      "ampel": "rot",
-      "co2_g": 48.0,
-      "co2_rating": "C",
-      "water_l": 0.03
-     },
-     {
-      "group": "Aktionen",
       "name": "Mayonnaise",
       "price": {
        "student": 0.15,
@@ -293,6 +271,28 @@
       "co2_g": 59.0,
       "co2_rating": "A",
       "water_l": 0.91
+     },
+     {
+      "group": "Aktionen",
+      "name": "Tomatenketchup",
+      "price": {
+       "student": 0.15,
+       "staff": 0.2,
+       "guest": 0.25
+      },
+      "codes": [
+       "29"
+      ],
+      "allergens": [
+       "Senf"
+      ],
+      "flags": [
+       "vegan"
+      ],
+      "ampel": "rot",
+      "co2_g": 48.0,
+      "co2_rating": "C",
+      "water_l": 0.03
      },
      {
       "group": "Aktionen",
@@ -614,6 +614,50 @@
      },
      {
       "group": "Desserts",
+      "name": "4- Veganer Joghurt mit Apfel und Zimt",
+      "price": {
+       "student": 0.75,
+       "staff": 1.5,
+       "guest": 1.75
+      },
+      "codes": [
+       "7"
+      ],
+      "allergens": [
+       "Antioxidationsmittel"
+      ],
+      "flags": [
+       "vegan"
+      ],
+      "ampel": "gruen",
+      "co2_g": 39.0,
+      "co2_rating": "A",
+      "water_l": 3.72
+     },
+     {
+      "group": "Desserts",
+      "name": "5- Bananen-Kokos-Joghurt",
+      "price": {
+       "student": 0.75,
+       "staff": 1.5,
+       "guest": 1.75
+      },
+      "codes": [
+       "30"
+      ],
+      "allergens": [
+       "Milch und Milchprodukte (inkl. Laktose)"
+      ],
+      "flags": [
+       "vegetarisch"
+      ],
+      "ampel": "gruen",
+      "co2_g": 159.0,
+      "co2_rating": "B",
+      "water_l": 6.16
+     },
+     {
+      "group": "Desserts",
       "name": "2- Naturjoghurt",
       "price": {
        "student": 0.75,
@@ -657,50 +701,6 @@
       "co2_g": 207.0,
       "co2_rating": "B",
       "water_l": 7.63
-     },
-     {
-      "group": "Desserts",
-      "name": "4- Veganer Joghurt mit Apfel und Zimt",
-      "price": {
-       "student": 0.75,
-       "staff": 1.5,
-       "guest": 1.75
-      },
-      "codes": [
-       "7"
-      ],
-      "allergens": [
-       "Antioxidationsmittel"
-      ],
-      "flags": [
-       "vegan"
-      ],
-      "ampel": "gruen",
-      "co2_g": 39.0,
-      "co2_rating": "A",
-      "water_l": 3.72
-     },
-     {
-      "group": "Desserts",
-      "name": "5- Bananen-Kokos-Joghurt",
-      "price": {
-       "student": 0.75,
-       "staff": 1.5,
-       "guest": 1.75
-      },
-      "codes": [
-       "30"
-      ],
-      "allergens": [
-       "Milch und Milchprodukte (inkl. Laktose)"
-      ],
-      "flags": [
-       "vegetarisch"
-      ],
-      "ampel": "gruen",
-      "co2_g": 159.0,
-      "co2_rating": "B",
-      "water_l": 6.16
      },
      {
       "group": "Desserts",
@@ -1038,6 +1038,26 @@
      },
      {
       "group": "Aktionen",
+      "name": "Hartkäse gerieben",
+      "price": {
+       "student": 0.75,
+       "staff": 0.85,
+       "guest": 0.9
+      },
+      "codes": [
+       "30"
+      ],
+      "allergens": [
+       "Milch und Milchprodukte (inkl. Laktose)"
+      ],
+      "flags": [],
+      "ampel": "rot",
+      "co2_g": 421.0,
+      "co2_rating": "C",
+      "water_l": 9.61
+     },
+     {
+      "group": "Aktionen",
       "name": "Veganer Käse",
       "price": {
        "student": 0.75,
@@ -1057,26 +1077,6 @@
       "co2_g": 20.0,
       "co2_rating": "A",
       "water_l": 0.96
-     },
-     {
-      "group": "Aktionen",
-      "name": "Hartkäse gerieben",
-      "price": {
-       "student": 0.75,
-       "staff": 0.85,
-       "guest": 0.9
-      },
-      "codes": [
-       "30"
-      ],
-      "allergens": [
-       "Milch und Milchprodukte (inkl. Laktose)"
-      ],
-      "flags": [],
-      "ampel": "rot",
-      "co2_g": 421.0,
-      "co2_rating": "C",
-      "water_l": 9.61
      },
      {
       "group": "Aktionen",
@@ -1408,28 +1408,6 @@
      },
      {
       "group": "Desserts",
-      "name": "3- Ananasquark",
-      "price": {
-       "student": 0.75,
-       "staff": 1.5,
-       "guest": 1.75
-      },
-      "codes": [
-       "30"
-      ],
-      "allergens": [
-       "Milch und Milchprodukte (inkl. Laktose)"
-      ],
-      "flags": [
-       "vegetarisch"
-      ],
-      "ampel": "rot",
-      "co2_g": 298.0,
-      "co2_rating": "B",
-      "water_l": 9.93
-     },
-     {
-      "group": "Desserts",
       "name": "5- Kirschjoghurt mit Dinkel",
       "price": {
        "student": 0.75,
@@ -1495,6 +1473,28 @@
       "co2_g": 54.0,
       "co2_rating": "A",
       "water_l": 3.88
+     },
+     {
+      "group": "Desserts",
+      "name": "3- Ananasquark",
+      "price": {
+       "student": 0.75,
+       "staff": 1.5,
+       "guest": 1.75
+      },
+      "codes": [
+       "30"
+      ],
+      "allergens": [
+       "Milch und Milchprodukte (inkl. Laktose)"
+      ],
+      "flags": [
+       "vegetarisch"
+      ],
+      "ampel": "rot",
+      "co2_g": 298.0,
+      "co2_rating": "B",
+      "water_l": 9.93
      },
      {
       "group": "Desserts",
@@ -1758,28 +1758,6 @@
      },
      {
       "group": "Aktionen",
-      "name": "Tomatenketchup",
-      "price": {
-       "student": 0.15,
-       "staff": 0.2,
-       "guest": 0.25
-      },
-      "codes": [
-       "29"
-      ],
-      "allergens": [
-       "Senf"
-      ],
-      "flags": [
-       "vegan"
-      ],
-      "ampel": "rot",
-      "co2_g": 48.0,
-      "co2_rating": "C",
-      "water_l": 0.03
-     },
-     {
-      "group": "Aktionen",
       "name": "Mayonnaise",
       "price": {
        "student": 0.15,
@@ -1801,6 +1779,28 @@
       "co2_g": 59.0,
       "co2_rating": "A",
       "water_l": 0.91
+     },
+     {
+      "group": "Aktionen",
+      "name": "Tomatenketchup",
+      "price": {
+       "student": 0.15,
+       "staff": 0.2,
+       "guest": 0.25
+      },
+      "codes": [
+       "29"
+      ],
+      "allergens": [
+       "Senf"
+      ],
+      "flags": [
+       "vegan"
+      ],
+      "ampel": "rot",
+      "co2_g": 48.0,
+      "co2_rating": "C",
+      "water_l": 0.03
      },
      {
       "group": "Aktionen",
@@ -2492,28 +2492,6 @@
      },
      {
       "group": "Aktionen",
-      "name": "Tomatenketchup",
-      "price": {
-       "student": 0.15,
-       "staff": 0.2,
-       "guest": 0.25
-      },
-      "codes": [
-       "29"
-      ],
-      "allergens": [
-       "Senf"
-      ],
-      "flags": [
-       "vegan"
-      ],
-      "ampel": "rot",
-      "co2_g": 48.0,
-      "co2_rating": "C",
-      "water_l": 0.03
-     },
-     {
-      "group": "Aktionen",
       "name": "Mayonnaise",
       "price": {
        "student": 0.15,
@@ -2535,6 +2513,28 @@
       "co2_g": 59.0,
       "co2_rating": "A",
       "water_l": 0.91
+     },
+     {
+      "group": "Aktionen",
+      "name": "Tomatenketchup",
+      "price": {
+       "student": 0.15,
+       "staff": 0.2,
+       "guest": 0.25
+      },
+      "codes": [
+       "29"
+      ],
+      "allergens": [
+       "Senf"
+      ],
+      "flags": [
+       "vegan"
+      ],
+      "ampel": "rot",
+      "co2_g": 48.0,
+      "co2_rating": "C",
+      "water_l": 0.03
      },
      {
       "group": "Aktionen",
@@ -2562,6 +2562,26 @@
      },
      {
       "group": "Aktionen",
+      "name": "Hartkäse gerieben",
+      "price": {
+       "student": 0.75,
+       "staff": 0.85,
+       "guest": 0.9
+      },
+      "codes": [
+       "30"
+      ],
+      "allergens": [
+       "Milch und Milchprodukte (inkl. Laktose)"
+      ],
+      "flags": [],
+      "ampel": "rot",
+      "co2_g": 421.0,
+      "co2_rating": "C",
+      "water_l": 9.61
+     },
+     {
+      "group": "Aktionen",
       "name": "Veganer Käse",
       "price": {
        "student": 0.75,
@@ -2581,26 +2601,6 @@
       "co2_g": 20.0,
       "co2_rating": "A",
       "water_l": 0.96
-     },
-     {
-      "group": "Aktionen",
-      "name": "Hartkäse gerieben",
-      "price": {
-       "student": 0.75,
-       "staff": 0.85,
-       "guest": 0.9
-      },
-      "codes": [
-       "30"
-      ],
-      "allergens": [
-       "Milch und Milchprodukte (inkl. Laktose)"
-      ],
-      "flags": [],
-      "ampel": "rot",
-      "co2_g": 421.0,
-      "co2_rating": "C",
-      "water_l": 9.61
      },
      {
       "group": "Aktionen",
@@ -2896,6 +2896,46 @@
      },
      {
       "group": "Desserts",
+      "name": "4- Veganer Joghurt mit Erdbeeren",
+      "price": {
+       "student": 0.75,
+       "staff": 1.5,
+       "guest": 1.75
+      },
+      "codes": [],
+      "allergens": [],
+      "flags": [
+       "vegan"
+      ],
+      "ampel": "gruen",
+      "co2_g": 48.0,
+      "co2_rating": "A",
+      "water_l": 4.15
+     },
+     {
+      "group": "Desserts",
+      "name": "5- Heidelbeerjoghurt",
+      "price": {
+       "student": 0.75,
+       "staff": 1.5,
+       "guest": 1.75
+      },
+      "codes": [
+       "30"
+      ],
+      "allergens": [
+       "Milch und Milchprodukte (inkl. Laktose)"
+      ],
+      "flags": [
+       "vegetarisch"
+      ],
+      "ampel": "gruen",
+      "co2_g": 149.0,
+      "co2_rating": "B",
+      "water_l": 4.57
+     },
+     {
+      "group": "Desserts",
       "name": "3- Rhababerquark mit Mandeln",
       "price": {
        "student": 0.75,
@@ -2939,46 +2979,6 @@
       "co2_g": 151.0,
       "co2_rating": "B",
       "water_l": 4.61
-     },
-     {
-      "group": "Desserts",
-      "name": "4- Veganer Joghurt mit Erdbeeren",
-      "price": {
-       "student": 0.75,
-       "staff": 1.5,
-       "guest": 1.75
-      },
-      "codes": [],
-      "allergens": [],
-      "flags": [
-       "vegan"
-      ],
-      "ampel": "gruen",
-      "co2_g": 48.0,
-      "co2_rating": "A",
-      "water_l": 4.15
-     },
-     {
-      "group": "Desserts",
-      "name": "5- Heidelbeerjoghurt",
-      "price": {
-       "student": 0.75,
-       "staff": 1.5,
-       "guest": 1.75
-      },
-      "codes": [
-       "30"
-      ],
-      "allergens": [
-       "Milch und Milchprodukte (inkl. Laktose)"
-      ],
-      "flags": [
-       "vegetarisch"
-      ],
-      "ampel": "gruen",
-      "co2_g": 149.0,
-      "co2_rating": "B",
-      "water_l": 4.57
      },
      {
       "group": "Desserts",
@@ -3156,24 +3156,6 @@
      },
      {
       "group": "Suppen",
-      "name": "1- Tomatensuppe mit Basilikum",
-      "price": {
-       "student": 0.75,
-       "staff": 1.5,
-       "guest": 1.75
-      },
-      "codes": [],
-      "allergens": [],
-      "flags": [
-       "vegan"
-      ],
-      "ampel": "gruen",
-      "co2_g": 81.0,
-      "co2_rating": "A",
-      "water_l": 15.64
-     },
-     {
-      "group": "Suppen",
       "name": "2- Kürbissuppe mit Kokosmilch und Ingwer",
       "price": {
        "student": 0.75,
@@ -3189,6 +3171,24 @@
       "co2_g": 77.0,
       "co2_rating": "A",
       "water_l": 4.11
+     },
+     {
+      "group": "Suppen",
+      "name": "1- Tomatensuppe mit Basilikum",
+      "price": {
+       "student": 0.75,
+       "staff": 1.5,
+       "guest": 1.75
+      },
+      "codes": [],
+      "allergens": [],
+      "flags": [
+       "vegan"
+      ],
+      "ampel": "gruen",
+      "co2_g": 81.0,
+      "co2_rating": "A",
+      "water_l": 15.64
      },
      {
       "group": "Aktionen",
@@ -3232,28 +3232,6 @@
      },
      {
       "group": "Aktionen",
-      "name": "Tomatenketchup",
-      "price": {
-       "student": 0.15,
-       "staff": 0.2,
-       "guest": 0.25
-      },
-      "codes": [
-       "29"
-      ],
-      "allergens": [
-       "Senf"
-      ],
-      "flags": [
-       "vegan"
-      ],
-      "ampel": "rot",
-      "co2_g": 48.0,
-      "co2_rating": "C",
-      "water_l": 0.03
-     },
-     {
-      "group": "Aktionen",
       "name": "Mayonnaise",
       "price": {
        "student": 0.15,
@@ -3275,6 +3253,28 @@
       "co2_g": 59.0,
       "co2_rating": "A",
       "water_l": 0.91
+     },
+     {
+      "group": "Aktionen",
+      "name": "Tomatenketchup",
+      "price": {
+       "student": 0.15,
+       "staff": 0.2,
+       "guest": 0.25
+      },
+      "codes": [
+       "29"
+      ],
+      "allergens": [
+       "Senf"
+      ],
+      "flags": [
+       "vegan"
+      ],
+      "ampel": "rot",
+      "co2_g": 48.0,
+      "co2_rating": "C",
+      "water_l": 0.03
      },
      {
       "group": "Aktionen",
@@ -3304,26 +3304,6 @@
      },
      {
       "group": "Aktionen",
-      "name": "Hartkäse gerieben",
-      "price": {
-       "student": 0.75,
-       "staff": 0.85,
-       "guest": 0.9
-      },
-      "codes": [
-       "30"
-      ],
-      "allergens": [
-       "Milch und Milchprodukte (inkl. Laktose)"
-      ],
-      "flags": [],
-      "ampel": "rot",
-      "co2_g": 421.0,
-      "co2_rating": "C",
-      "water_l": 9.61
-     },
-     {
-      "group": "Aktionen",
       "name": "Veganer Käse",
       "price": {
        "student": 0.75,
@@ -3343,6 +3323,26 @@
       "co2_g": 20.0,
       "co2_rating": "A",
       "water_l": 0.96
+     },
+     {
+      "group": "Aktionen",
+      "name": "Hartkäse gerieben",
+      "price": {
+       "student": 0.75,
+       "staff": 0.85,
+       "guest": 0.9
+      },
+      "codes": [
+       "30"
+      ],
+      "allergens": [
+       "Milch und Milchprodukte (inkl. Laktose)"
+      ],
+      "flags": [],
+      "ampel": "rot",
+      "co2_g": 421.0,
+      "co2_rating": "C",
+      "water_l": 9.61
      },
      {
       "group": "Aktionen",
@@ -3640,6 +3640,28 @@
      },
      {
       "group": "Desserts",
+      "name": "2- Naturjoghurt",
+      "price": {
+       "student": 0.75,
+       "staff": 1.5,
+       "guest": 1.75
+      },
+      "codes": [
+       "30"
+      ],
+      "allergens": [
+       "Milch und Milchprodukte (inkl. Laktose)"
+      ],
+      "flags": [
+       "vegetarisch"
+      ],
+      "ampel": "gelb",
+      "co2_g": 151.0,
+      "co2_rating": "B",
+      "water_l": 4.61
+     },
+     {
+      "group": "Desserts",
       "name": "5- Apfel-Joghurt",
       "price": {
        "student": 0.75,
@@ -3705,28 +3727,6 @@
       "co2_g": 54.0,
       "co2_rating": "A",
       "water_l": 50.11
-     },
-     {
-      "group": "Desserts",
-      "name": "2- Naturjoghurt",
-      "price": {
-       "student": 0.75,
-       "staff": 1.5,
-       "guest": 1.75
-      },
-      "codes": [
-       "30"
-      ],
-      "allergens": [
-       "Milch und Milchprodukte (inkl. Laktose)"
-      ],
-      "flags": [
-       "vegetarisch"
-      ],
-      "ampel": "gelb",
-      "co2_g": 151.0,
-      "co2_rating": "B",
-      "water_l": 4.61
      },
      {
       "group": "Desserts",
@@ -3996,28 +3996,6 @@
      },
      {
       "group": "Aktionen",
-      "name": "Tomatenketchup",
-      "price": {
-       "student": 0.15,
-       "staff": 0.2,
-       "guest": 0.25
-      },
-      "codes": [
-       "29"
-      ],
-      "allergens": [
-       "Senf"
-      ],
-      "flags": [
-       "vegan"
-      ],
-      "ampel": "rot",
-      "co2_g": 48.0,
-      "co2_rating": "C",
-      "water_l": 0.03
-     },
-     {
-      "group": "Aktionen",
       "name": "Mayonnaise",
       "price": {
        "student": 0.15,
@@ -4039,6 +4017,28 @@
       "co2_g": 59.0,
       "co2_rating": "A",
       "water_l": 0.91
+     },
+     {
+      "group": "Aktionen",
+      "name": "Tomatenketchup",
+      "price": {
+       "student": 0.15,
+       "staff": 0.2,
+       "guest": 0.25
+      },
+      "codes": [
+       "29"
+      ],
+      "allergens": [
+       "Senf"
+      ],
+      "flags": [
+       "vegan"
+      ],
+      "ampel": "rot",
+      "co2_g": 48.0,
+      "co2_rating": "C",
+      "water_l": 0.03
      },
      {
       "group": "Aktionen",
@@ -4402,6 +4402,30 @@
      },
      {
       "group": "Desserts",
+      "name": "5- Mohnjoghurt mit Mandarinen",
+      "price": {
+       "student": 0.75,
+       "staff": 1.5,
+       "guest": 1.75
+      },
+      "codes": [
+       "30",
+       "37"
+      ],
+      "allergens": [
+       "Milch und Milchprodukte (inkl. Laktose)",
+       "Blaumohn"
+      ],
+      "flags": [
+       "vegetarisch"
+      ],
+      "ampel": "gruen",
+      "co2_g": 155.0,
+      "co2_rating": "B",
+      "water_l": 7.13
+     },
+     {
+      "group": "Desserts",
       "name": "2- Naturjoghurt",
       "price": {
        "student": 0.75,
@@ -4442,30 +4466,6 @@
      },
      {
       "group": "Desserts",
-      "name": "5- Mohnjoghurt mit Mandarinen",
-      "price": {
-       "student": 0.75,
-       "staff": 1.5,
-       "guest": 1.75
-      },
-      "codes": [
-       "30",
-       "37"
-      ],
-      "allergens": [
-       "Milch und Milchprodukte (inkl. Laktose)",
-       "Blaumohn"
-      ],
-      "flags": [
-       "vegetarisch"
-      ],
-      "ampel": "gruen",
-      "co2_g": 155.0,
-      "co2_rating": "B",
-      "water_l": 7.13
-     },
-     {
-      "group": "Desserts",
       "name": "3- Müsliquark",
       "price": {
        "student": 0.75,
@@ -4500,25 +4500,27 @@
      },
      {
       "group": "Desserts",
-      "name": "1- Vanillepudding mit Schokoladensauce",
+      "name": "1- Pistazienpudding",
       "price": {
        "student": 0.75,
        "staff": 1.5,
        "guest": 1.75
       },
       "codes": [
+       "26g",
        "30"
       ],
       "allergens": [
+       "Pistazie",
        "Milch und Milchprodukte (inkl. Laktose)"
       ],
       "flags": [
        "vegetarisch"
       ],
-      "ampel": "rot",
-      "co2_g": 278.0,
+      "ampel": "gelb",
+      "co2_g": 164.0,
       "co2_rating": "B",
-      "water_l": 8.13
+      "water_l": 4.89
      }
     ],
     "2026-11-17": [
@@ -4770,6 +4772,28 @@
      },
      {
       "group": "Aktionen",
+      "name": "Tomatenketchup",
+      "price": {
+       "student": 0.15,
+       "staff": 0.2,
+       "guest": 0.25
+      },
+      "codes": [
+       "29"
+      ],
+      "allergens": [
+       "Senf"
+      ],
+      "flags": [
+       "vegan"
+      ],
+      "ampel": "rot",
+      "co2_g": 48.0,
+      "co2_rating": "C",
+      "water_l": 0.03
+     },
+     {
+      "group": "Aktionen",
       "name": "Mayonnaise",
       "price": {
        "student": 0.15,
@@ -4791,28 +4815,6 @@
       "co2_g": 59.0,
       "co2_rating": "A",
       "water_l": 0.91
-     },
-     {
-      "group": "Aktionen",
-      "name": "Tomatenketchup",
-      "price": {
-       "student": 0.15,
-       "staff": 0.2,
-       "guest": 0.25
-      },
-      "codes": [
-       "29"
-      ],
-      "allergens": [
-       "Senf"
-      ],
-      "flags": [
-       "vegan"
-      ],
-      "ampel": "rot",
-      "co2_g": 48.0,
-      "co2_rating": "C",
-      "water_l": 0.03
      },
      {
       "group": "Aktionen",
@@ -4988,6 +4990,24 @@
      },
      {
       "group": "Essen",
+      "name": "Kokos-Milchreis mit Mangokompott",
+      "price": {
+       "student": 1.75,
+       "staff": 3.5,
+       "guest": 4.05
+      },
+      "codes": [],
+      "allergens": [],
+      "flags": [
+       "vegan"
+      ],
+      "ampel": "gelb",
+      "co2_g": 750.0,
+      "co2_rating": "A",
+      "water_l": 74.4
+     },
+     {
+      "group": "Essen",
       "name": "Kartoffel-Kürbiscurry mit Kokosmlich, Ingwer und Zitronengras",
       "price": {
        "student": 1.75,
@@ -5011,24 +5031,6 @@
       "co2_g": 213.0,
       "co2_rating": "A",
       "water_l": 11.06
-     },
-     {
-      "group": "Essen",
-      "name": "Kokos-Milchreis mit Mangokompott",
-      "price": {
-       "student": 1.75,
-       "staff": 3.5,
-       "guest": 4.05
-      },
-      "codes": [],
-      "allergens": [],
-      "flags": [
-       "vegan"
-      ],
-      "ampel": "gelb",
-      "co2_g": 750.0,
-      "co2_rating": "A",
-      "water_l": 74.4
      },
      {
       "group": "Essen",
@@ -5244,6 +5246,24 @@
      },
      {
       "group": "Desserts",
+      "name": "4- Veganer Joghurt mit Kirschen",
+      "price": {
+       "student": 0.75,
+       "staff": 1.5,
+       "guest": 1.75
+      },
+      "codes": [],
+      "allergens": [],
+      "flags": [
+       "vegan"
+      ],
+      "ampel": "gruen",
+      "co2_g": 48.0,
+      "co2_rating": "A",
+      "water_l": 7.9
+     },
+     {
+      "group": "Desserts",
       "name": "5- Apfel-Zimt-Joghurt",
       "price": {
        "student": 0.75,
@@ -5265,28 +5285,6 @@
       "co2_g": 155.0,
       "co2_rating": "B",
       "water_l": 4.58
-     },
-     {
-      "group": "Desserts",
-      "name": "2- Naturjoghurt",
-      "price": {
-       "student": 0.75,
-       "staff": 1.5,
-       "guest": 1.75
-      },
-      "codes": [
-       "30"
-      ],
-      "allergens": [
-       "Milch und Milchprodukte (inkl. Laktose)"
-      ],
-      "flags": [
-       "vegetarisch"
-      ],
-      "ampel": "gelb",
-      "co2_g": 151.0,
-      "co2_rating": "B",
-      "water_l": 4.61
      },
      {
       "group": "Desserts",
@@ -5312,25 +5310,7 @@
      },
      {
       "group": "Desserts",
-      "name": "4- Veganer Joghurt mit Kirschen",
-      "price": {
-       "student": 0.75,
-       "staff": 1.5,
-       "guest": 1.75
-      },
-      "codes": [],
-      "allergens": [],
-      "flags": [
-       "vegan"
-      ],
-      "ampel": "gruen",
-      "co2_g": 48.0,
-      "co2_rating": "A",
-      "water_l": 7.9
-     },
-     {
-      "group": "Desserts",
-      "name": "1- Vanillepudding mit Schokoladensauce",
+      "name": "2- Naturjoghurt",
       "price": {
        "student": 0.75,
        "staff": 1.5,
@@ -5345,10 +5325,34 @@
       "flags": [
        "vegetarisch"
       ],
-      "ampel": "rot",
-      "co2_g": 278.0,
+      "ampel": "gelb",
+      "co2_g": 151.0,
       "co2_rating": "B",
-      "water_l": 8.13
+      "water_l": 4.61
+     },
+     {
+      "group": "Desserts",
+      "name": "1- Pistazienpudding",
+      "price": {
+       "student": 0.75,
+       "staff": 1.5,
+       "guest": 1.75
+      },
+      "codes": [
+       "26g",
+       "30"
+      ],
+      "allergens": [
+       "Pistazie",
+       "Milch und Milchprodukte (inkl. Laktose)"
+      ],
+      "flags": [
+       "vegetarisch"
+      ],
+      "ampel": "gelb",
+      "co2_g": 164.0,
+      "co2_rating": "B",
+      "water_l": 4.89
      }
     ],
     "2026-11-18": [
@@ -5670,26 +5674,6 @@
      },
      {
       "group": "Aktionen",
-      "name": "Hartkäse gerieben",
-      "price": {
-       "student": 0.75,
-       "staff": 0.85,
-       "guest": 0.9
-      },
-      "codes": [
-       "30"
-      ],
-      "allergens": [
-       "Milch und Milchprodukte (inkl. Laktose)"
-      ],
-      "flags": [],
-      "ampel": "rot",
-      "co2_g": 421.0,
-      "co2_rating": "C",
-      "water_l": 9.61
-     },
-     {
-      "group": "Aktionen",
       "name": "Veganer Käse",
       "price": {
        "student": 0.75,
@@ -5709,6 +5693,26 @@
       "co2_g": 20.0,
       "co2_rating": "A",
       "water_l": 0.96
+     },
+     {
+      "group": "Aktionen",
+      "name": "Hartkäse gerieben",
+      "price": {
+       "student": 0.75,
+       "staff": 0.85,
+       "guest": 0.9
+      },
+      "codes": [
+       "30"
+      ],
+      "allergens": [
+       "Milch und Milchprodukte (inkl. Laktose)"
+      ],
+      "flags": [],
+      "ampel": "rot",
+      "co2_g": 421.0,
+      "co2_rating": "C",
+      "water_l": 9.61
      },
      {
       "group": "Aktionen",
@@ -6026,46 +6030,6 @@
      },
      {
       "group": "Desserts",
-      "name": "4- Veganer Joghurt mit Mandarinen und Kokos",
-      "price": {
-       "student": 0.75,
-       "staff": 1.5,
-       "guest": 1.75
-      },
-      "codes": [],
-      "allergens": [],
-      "flags": [
-       "vegan"
-      ],
-      "ampel": "gruen",
-      "co2_g": 46.0,
-      "co2_rating": "A",
-      "water_l": 5.93
-     },
-     {
-      "group": "Desserts",
-      "name": "3- Heidelbeerquark",
-      "price": {
-       "student": 0.75,
-       "staff": 1.5,
-       "guest": 1.75
-      },
-      "codes": [
-       "30"
-      ],
-      "allergens": [
-       "Milch und Milchprodukte (inkl. Laktose)"
-      ],
-      "flags": [
-       "vegetarisch"
-      ],
-      "ampel": "rot",
-      "co2_g": 366.0,
-      "co2_rating": "B",
-      "water_l": 12.73
-     },
-     {
-      "group": "Desserts",
       "name": "2- Naturjoghurt",
       "price": {
        "student": 0.75,
@@ -6109,6 +6073,46 @@
       "co2_g": 193.0,
       "co2_rating": "B",
       "water_l": 8.48
+     },
+     {
+      "group": "Desserts",
+      "name": "3- Heidelbeerquark",
+      "price": {
+       "student": 0.75,
+       "staff": 1.5,
+       "guest": 1.75
+      },
+      "codes": [
+       "30"
+      ],
+      "allergens": [
+       "Milch und Milchprodukte (inkl. Laktose)"
+      ],
+      "flags": [
+       "vegetarisch"
+      ],
+      "ampel": "rot",
+      "co2_g": 366.0,
+      "co2_rating": "B",
+      "water_l": 12.73
+     },
+     {
+      "group": "Desserts",
+      "name": "4- Veganer Joghurt mit Mandarinen und Kokos",
+      "price": {
+       "student": 0.75,
+       "staff": 1.5,
+       "guest": 1.75
+      },
+      "codes": [],
+      "allergens": [],
+      "flags": [
+       "vegan"
+      ],
+      "ampel": "gruen",
+      "co2_g": 46.0,
+      "co2_rating": "A",
+      "water_l": 5.93
      },
      {
       "group": "Desserts",
@@ -6268,28 +6272,6 @@
      },
      {
       "group": "Suppen",
-      "name": "1- Krautsuppe",
-      "price": {
-       "student": 0.75,
-       "staff": 1.5,
-       "guest": 1.75
-      },
-      "codes": [
-       "28"
-      ],
-      "allergens": [
-       "Soja"
-      ],
-      "flags": [
-       "vegan"
-      ],
-      "ampel": "gruen",
-      "co2_g": 61.0,
-      "co2_rating": "A",
-      "water_l": 4.54
-     },
-     {
-      "group": "Suppen",
       "name": "2- Linsensuppe mit Wurzelgemüse",
       "price": {
        "student": 0.75,
@@ -6311,6 +6293,28 @@
       "co2_g": 177.0,
       "co2_rating": "A",
       "water_l": 36.87
+     },
+     {
+      "group": "Suppen",
+      "name": "1- Krautsuppe",
+      "price": {
+       "student": 0.75,
+       "staff": 1.5,
+       "guest": 1.75
+      },
+      "codes": [
+       "28"
+      ],
+      "allergens": [
+       "Soja"
+      ],
+      "flags": [
+       "vegan"
+      ],
+      "ampel": "gruen",
+      "co2_g": 61.0,
+      "co2_rating": "A",
+      "water_l": 4.54
      },
      {
       "group": "Aktionen",
@@ -6430,26 +6434,6 @@
      },
      {
       "group": "Aktionen",
-      "name": "Hartkäse gerieben",
-      "price": {
-       "student": 0.75,
-       "staff": 0.85,
-       "guest": 0.9
-      },
-      "codes": [
-       "30"
-      ],
-      "allergens": [
-       "Milch und Milchprodukte (inkl. Laktose)"
-      ],
-      "flags": [],
-      "ampel": "rot",
-      "co2_g": 421.0,
-      "co2_rating": "C",
-      "water_l": 9.61
-     },
-     {
-      "group": "Aktionen",
       "name": "Veganer Käse",
       "price": {
        "student": 0.75,
@@ -6469,6 +6453,26 @@
       "co2_g": 20.0,
       "co2_rating": "A",
       "water_l": 0.96
+     },
+     {
+      "group": "Aktionen",
+      "name": "Hartkäse gerieben",
+      "price": {
+       "student": 0.75,
+       "staff": 0.85,
+       "guest": 0.9
+      },
+      "codes": [
+       "30"
+      ],
+      "allergens": [
+       "Milch und Milchprodukte (inkl. Laktose)"
+      ],
+      "flags": [],
+      "ampel": "rot",
+      "co2_g": 421.0,
+      "co2_rating": "C",
+      "water_l": 9.61
      },
      {
       "group": "Aktionen",
@@ -6524,6 +6528,30 @@
      },
      {
       "group": "Essen",
+      "name": "2 Hausgemachter Cevapcici aus Erbsenprotein an Hot-Chili-Dip",
+      "price": {
+       "student": 2.15,
+       "staff": 4.3,
+       "guest": 4.95
+      },
+      "codes": [
+       "7",
+       "27"
+      ],
+      "allergens": [
+       "Antioxidationsmittel",
+       "Sellerie"
+      ],
+      "flags": [
+       "vegan"
+      ],
+      "ampel": null,
+      "co2_g": 610.0,
+      "co2_rating": "A",
+      "water_l": 10.23
+     },
+     {
+      "group": "Essen",
       "name": "Eine Wirsingkohlroulade mit Hackfleischfüllung an Kümmeljus",
       "price": {
        "student": 2.15,
@@ -6551,30 +6579,6 @@
       "co2_g": 379.0,
       "co2_rating": "B",
       "water_l": 15.85
-     },
-     {
-      "group": "Essen",
-      "name": "2 Hausgemachter Cevapcici aus Erbsenprotein an Hot-Chili-Dip",
-      "price": {
-       "student": 2.15,
-       "staff": 4.3,
-       "guest": 4.95
-      },
-      "codes": [
-       "7",
-       "27"
-      ],
-      "allergens": [
-       "Antioxidationsmittel",
-       "Sellerie"
-      ],
-      "flags": [
-       "vegan"
-      ],
-      "ampel": null,
-      "co2_g": 610.0,
-      "co2_rating": "A",
-      "water_l": 10.23
      },
      {
       "group": "Essen",
@@ -6814,50 +6818,6 @@
      },
      {
       "group": "Desserts",
-      "name": "4- Veganer Joghurt mit Pfirsich und Walnüssen",
-      "price": {
-       "student": 0.75,
-       "staff": 1.5,
-       "guest": 1.75
-      },
-      "codes": [
-       "26c"
-      ],
-      "allergens": [
-       "Walnuss"
-      ],
-      "flags": [
-       "vegan"
-      ],
-      "ampel": "gruen",
-      "co2_g": 178.0,
-      "co2_rating": "B",
-      "water_l": 31.05
-     },
-     {
-      "group": "Desserts",
-      "name": "5- Waldbeerjoghurt",
-      "price": {
-       "student": 0.75,
-       "staff": 1.5,
-       "guest": 1.75
-      },
-      "codes": [
-       "30"
-      ],
-      "allergens": [
-       "Milch und Milchprodukte (inkl. Laktose)"
-      ],
-      "flags": [
-       "vegetarisch"
-      ],
-      "ampel": "gruen",
-      "co2_g": 150.0,
-      "co2_rating": "B",
-      "water_l": 4.6
-     },
-     {
-      "group": "Desserts",
       "name": "2- Naturjoghurt",
       "price": {
        "student": 0.75,
@@ -6901,6 +6861,50 @@
       "co2_g": 380.0,
       "co2_rating": "B",
       "water_l": 17.22
+     },
+     {
+      "group": "Desserts",
+      "name": "4- Veganer Joghurt mit Pfirsich und Walnüssen",
+      "price": {
+       "student": 0.75,
+       "staff": 1.5,
+       "guest": 1.75
+      },
+      "codes": [
+       "26c"
+      ],
+      "allergens": [
+       "Walnuss"
+      ],
+      "flags": [
+       "vegan"
+      ],
+      "ampel": "gruen",
+      "co2_g": 178.0,
+      "co2_rating": "B",
+      "water_l": 31.05
+     },
+     {
+      "group": "Desserts",
+      "name": "5- Waldbeerjoghurt",
+      "price": {
+       "student": 0.75,
+       "staff": 1.5,
+       "guest": 1.75
+      },
+      "codes": [
+       "30"
+      ],
+      "allergens": [
+       "Milch und Milchprodukte (inkl. Laktose)"
+      ],
+      "flags": [
+       "vegetarisch"
+      ],
+      "ampel": "gruen",
+      "co2_g": 150.0,
+      "co2_rating": "B",
+      "water_l": 4.6
      },
      {
       "group": "Desserts",
@@ -7246,6 +7250,26 @@
      },
      {
       "group": "Aktionen",
+      "name": "Hartkäse gerieben",
+      "price": {
+       "student": 0.75,
+       "staff": 0.85,
+       "guest": 0.9
+      },
+      "codes": [
+       "30"
+      ],
+      "allergens": [
+       "Milch und Milchprodukte (inkl. Laktose)"
+      ],
+      "flags": [],
+      "ampel": "rot",
+      "co2_g": 421.0,
+      "co2_rating": "C",
+      "water_l": 9.61
+     },
+     {
+      "group": "Aktionen",
       "name": "Veganer Käse",
       "price": {
        "student": 0.75,
@@ -7265,26 +7289,6 @@
       "co2_g": 20.0,
       "co2_rating": "A",
       "water_l": 0.96
-     },
-     {
-      "group": "Aktionen",
-      "name": "Hartkäse gerieben",
-      "price": {
-       "student": 0.75,
-       "staff": 0.85,
-       "guest": 0.9
-      },
-      "codes": [
-       "30"
-      ],
-      "allergens": [
-       "Milch und Milchprodukte (inkl. Laktose)"
-      ],
-      "flags": [],
-      "ampel": "rot",
-      "co2_g": 421.0,
-      "co2_rating": "C",
-      "water_l": 9.61
      },
      {
       "group": "Aktionen",
@@ -7600,6 +7604,50 @@
      },
      {
       "group": "Desserts",
+      "name": "4- Veganer Joghurt mit Waldbeeren",
+      "price": {
+       "student": 0.75,
+       "staff": 1.5,
+       "guest": 1.75
+      },
+      "codes": [],
+      "allergens": [],
+      "flags": [
+       "vegan"
+      ],
+      "ampel": "gelb",
+      "co2_g": 43.0,
+      "co2_rating": "A",
+      "water_l": 3.97
+     },
+     {
+      "group": "Desserts",
+      "name": "5- Birnen-Hafer-Joghurt",
+      "price": {
+       "student": 0.75,
+       "staff": 1.5,
+       "guest": 1.75
+      },
+      "codes": [
+       "21d",
+       "26a",
+       "30"
+      ],
+      "allergens": [
+       "Hafer",
+       "Mandeln",
+       "Milch und Milchprodukte (inkl. Laktose)"
+      ],
+      "flags": [
+       "vegetarisch"
+      ],
+      "ampel": "gruen",
+      "co2_g": 161.0,
+      "co2_rating": "B",
+      "water_l": 13.66
+     },
+     {
+      "group": "Desserts",
       "name": "3- Quark mit Waldmeister",
       "price": {
        "student": 0.75,
@@ -7643,50 +7691,6 @@
       "co2_g": 151.0,
       "co2_rating": "B",
       "water_l": 4.61
-     },
-     {
-      "group": "Desserts",
-      "name": "4- Veganer Joghurt mit Waldbeeren",
-      "price": {
-       "student": 0.75,
-       "staff": 1.5,
-       "guest": 1.75
-      },
-      "codes": [],
-      "allergens": [],
-      "flags": [
-       "vegan"
-      ],
-      "ampel": "gelb",
-      "co2_g": 43.0,
-      "co2_rating": "A",
-      "water_l": 3.97
-     },
-     {
-      "group": "Desserts",
-      "name": "5- Birnen-Hafer-Joghurt",
-      "price": {
-       "student": 0.75,
-       "staff": 1.5,
-       "guest": 1.75
-      },
-      "codes": [
-       "21d",
-       "26a",
-       "30"
-      ],
-      "allergens": [
-       "Hafer",
-       "Mandeln",
-       "Milch und Milchprodukte (inkl. Laktose)"
-      ],
-      "flags": [
-       "vegetarisch"
-      ],
-      "ampel": "gruen",
-      "co2_g": 161.0,
-      "co2_rating": "B",
-      "water_l": 13.66
      }
     ]
    }
@@ -7932,28 +7936,6 @@
      },
      {
       "group": "Desserts",
-      "name": "Quark mit Heidelbeeren",
-      "price": {
-       "student": 0.75,
-       "staff": 1.5,
-       "guest": 1.75
-      },
-      "codes": [
-       "30"
-      ],
-      "allergens": [
-       "Milch und Milchprodukte (inkl. Laktose)"
-      ],
-      "flags": [
-       "vegetarisch"
-      ],
-      "ampel": "rot",
-      "co2_g": null,
-      "co2_rating": null,
-      "water_l": null
-     },
-     {
-      "group": "Desserts",
       "name": "Matcha Joghurt mit Himbeeren",
       "price": {
        "student": 0.75,
@@ -7970,6 +7952,28 @@
        "vegetarisch"
       ],
       "ampel": "gelb",
+      "co2_g": null,
+      "co2_rating": null,
+      "water_l": null
+     },
+     {
+      "group": "Desserts",
+      "name": "Quark mit Heidelbeeren",
+      "price": {
+       "student": 0.75,
+       "staff": 1.5,
+       "guest": 1.75
+      },
+      "codes": [
+       "30"
+      ],
+      "allergens": [
+       "Milch und Milchprodukte (inkl. Laktose)"
+      ],
+      "flags": [
+       "vegetarisch"
+      ],
+      "ampel": "rot",
       "co2_g": null,
       "co2_rating": null,
       "water_l": null
@@ -8924,24 +8928,6 @@
      },
      {
       "group": "Desserts",
-      "name": "Veganer Joghurt mit Brombeeren und Kokosnuss",
-      "price": {
-       "student": 0.9,
-       "staff": 1.8,
-       "guest": 2.05
-      },
-      "codes": [],
-      "allergens": [],
-      "flags": [
-       "vegan"
-      ],
-      "ampel": "gruen",
-      "co2_g": null,
-      "co2_rating": null,
-      "water_l": null
-     },
-     {
-      "group": "Desserts",
       "name": "Matcha Panna Cotta mit Erdbeeren",
       "price": {
        "student": 0.9,
@@ -8958,6 +8944,24 @@
        "vegetarisch"
       ],
       "ampel": "rot",
+      "co2_g": null,
+      "co2_rating": null,
+      "water_l": null
+     },
+     {
+      "group": "Desserts",
+      "name": "Veganer Joghurt mit Brombeeren und Kokosnuss",
+      "price": {
+       "student": 0.9,
+       "staff": 1.8,
+       "guest": 2.05
+      },
+      "codes": [],
+      "allergens": [],
+      "flags": [
+       "vegan"
+      ],
+      "ampel": "gruen",
       "co2_g": null,
       "co2_rating": null,
       "water_l": null
@@ -10798,6 +10802,28 @@
      },
      {
       "group": "Desserts",
+      "name": "Quark mit Erdbeeren",
+      "price": {
+       "student": 0.75,
+       "staff": 1.5,
+       "guest": 1.75
+      },
+      "codes": [
+       "30"
+      ],
+      "allergens": [
+       "Milch und Milchprodukte (inkl. Laktose)"
+      ],
+      "flags": [
+       "vegetarisch"
+      ],
+      "ampel": "rot",
+      "co2_g": 288.0,
+      "co2_rating": "B",
+      "water_l": 8.88
+     },
+     {
+      "group": "Desserts",
       "name": "Joghurt mit Pflaumen und Sesam",
       "price": {
        "student": 0.75,
@@ -10841,28 +10867,6 @@
       "co2_g": 171.0,
       "co2_rating": "B",
       "water_l": 6.06
-     },
-     {
-      "group": "Desserts",
-      "name": "Quark mit Erdbeeren",
-      "price": {
-       "student": 0.75,
-       "staff": 1.5,
-       "guest": 1.75
-      },
-      "codes": [
-       "30"
-      ],
-      "allergens": [
-       "Milch und Milchprodukte (inkl. Laktose)"
-      ],
-      "flags": [
-       "vegetarisch"
-      ],
-      "ampel": "rot",
-      "co2_g": 288.0,
-      "co2_rating": "B",
-      "water_l": 8.88
      }
     ]
    }
@@ -10930,6 +10934,24 @@
      },
      {
       "group": "Salate",
+      "name": "Sauce Vinaigrette",
+      "price": null,
+      "codes": [
+       "29"
+      ],
+      "allergens": [
+       "Senf"
+      ],
+      "flags": [
+       "vegan"
+      ],
+      "ampel": "rot",
+      "co2_g": 67.0,
+      "co2_rating": "A",
+      "water_l": 1.33
+     },
+     {
+      "group": "Salate",
       "name": "American-Dressing",
       "price": null,
       "codes": [
@@ -10965,24 +10987,6 @@
       "co2_g": null,
       "co2_rating": null,
       "water_l": null
-     },
-     {
-      "group": "Salate",
-      "name": "Sauce Vinaigrette",
-      "price": null,
-      "codes": [
-       "29"
-      ],
-      "allergens": [
-       "Senf"
-      ],
-      "flags": [
-       "vegan"
-      ],
-      "ampel": "rot",
-      "co2_g": 67.0,
-      "co2_rating": "A",
-      "water_l": 1.33
      },
      {
       "group": "Suppen",
@@ -11980,6 +11984,24 @@
      },
      {
       "group": "Desserts",
+      "name": "Veganer Joghurt",
+      "price": {
+       "student": 0.75,
+       "staff": 1.5,
+       "guest": 1.75
+      },
+      "codes": [],
+      "allergens": [],
+      "flags": [
+       "vegan"
+      ],
+      "ampel": "gruen",
+      "co2_g": 47.0,
+      "co2_rating": "A",
+      "water_l": 4.13
+     },
+     {
+      "group": "Desserts",
       "name": "Joghurt",
       "price": {
        "student": 0.75,
@@ -12021,24 +12043,6 @@
       "co2_g": 353.0,
       "co2_rating": "B",
       "water_l": 11.98
-     },
-     {
-      "group": "Desserts",
-      "name": "Veganer Joghurt",
-      "price": {
-       "student": 0.75,
-       "staff": 1.5,
-       "guest": 1.75
-      },
-      "codes": [],
-      "allergens": [],
-      "flags": [
-       "vegan"
-      ],
-      "ampel": "gruen",
-      "co2_g": 47.0,
-      "co2_rating": "A",
-      "water_l": 4.13
      }
     ],
     "2026-11-12": [
@@ -12096,6 +12100,26 @@
      },
      {
       "group": "Salate",
+      "name": "American-Dressing",
+      "price": null,
+      "codes": [
+       "28",
+       "29"
+      ],
+      "allergens": [
+       "Soja",
+       "Senf"
+      ],
+      "flags": [
+       "vegan"
+      ],
+      "ampel": "rot",
+      "co2_g": 97.0,
+      "co2_rating": "A",
+      "water_l": 1.68
+     },
+     {
+      "group": "Salate",
       "name": "Sauce Vinaigrette",
       "price": null,
       "codes": [
@@ -12129,26 +12153,6 @@
       "co2_g": 77.0,
       "co2_rating": "A",
       "water_l": 1.77
-     },
-     {
-      "group": "Salate",
-      "name": "American-Dressing",
-      "price": null,
-      "codes": [
-       "28",
-       "29"
-      ],
-      "allergens": [
-       "Soja",
-       "Senf"
-      ],
-      "flags": [
-       "vegan"
-      ],
-      "ampel": "rot",
-      "co2_g": 97.0,
-      "co2_rating": "A",
-      "water_l": 1.68
      },
      {
       "group": "Suppen",
@@ -12380,30 +12384,6 @@
      },
      {
       "group": "Beilagen",
-      "name": "Mayonnaise",
-      "price": {
-       "student": 0.15,
-       "staff": 0.2,
-       "guest": 0.25
-      },
-      "codes": [
-       "7",
-       "29"
-      ],
-      "allergens": [
-       "Antioxidationsmittel",
-       "Senf"
-      ],
-      "flags": [
-       "vegan"
-      ],
-      "ampel": "rot",
-      "co2_g": 59.0,
-      "co2_rating": "A",
-      "water_l": 0.91
-     },
-     {
-      "group": "Beilagen",
       "name": "Tomatenketchup",
       "price": {
        "student": 0.15,
@@ -12425,22 +12405,28 @@
       "water_l": 0.03
      },
      {
-      "group": "Desserts",
-      "name": "Veganer Joghurt",
+      "group": "Beilagen",
+      "name": "Mayonnaise",
       "price": {
-       "student": 0.75,
-       "staff": 1.5,
-       "guest": 1.75
+       "student": 0.15,
+       "staff": 0.2,
+       "guest": 0.25
       },
-      "codes": [],
-      "allergens": [],
+      "codes": [
+       "7",
+       "29"
+      ],
+      "allergens": [
+       "Antioxidationsmittel",
+       "Senf"
+      ],
       "flags": [
        "vegan"
       ],
-      "ampel": "gruen",
-      "co2_g": 47.0,
+      "ampel": "rot",
+      "co2_g": 59.0,
       "co2_rating": "A",
-      "water_l": 4.13
+      "water_l": 0.91
      },
      {
       "group": "Desserts",
@@ -12485,6 +12471,24 @@
       "co2_g": 168.0,
       "co2_rating": "B",
       "water_l": 5.36
+     },
+     {
+      "group": "Desserts",
+      "name": "Veganer Joghurt",
+      "price": {
+       "student": 0.75,
+       "staff": 1.5,
+       "guest": 1.75
+      },
+      "codes": [],
+      "allergens": [],
+      "flags": [
+       "vegan"
+      ],
+      "ampel": "gruen",
+      "co2_g": 47.0,
+      "co2_rating": "A",
+      "water_l": 4.13
      }
     ],
     "2026-11-13": [
@@ -12542,24 +12546,6 @@
      },
      {
       "group": "Salate",
-      "name": "Kräuter-Dressing",
-      "price": null,
-      "codes": [
-       "28"
-      ],
-      "allergens": [
-       "Soja"
-      ],
-      "flags": [
-       "vegan"
-      ],
-      "ampel": "rot",
-      "co2_g": 77.0,
-      "co2_rating": "A",
-      "water_l": 1.77
-     },
-     {
-      "group": "Salate",
       "name": "Sauce Vinaigrette",
       "price": null,
       "codes": [
@@ -12595,6 +12581,24 @@
       "co2_g": 97.0,
       "co2_rating": "A",
       "water_l": 1.68
+     },
+     {
+      "group": "Salate",
+      "name": "Kräuter-Dressing",
+      "price": null,
+      "codes": [
+       "28"
+      ],
+      "allergens": [
+       "Soja"
+      ],
+      "flags": [
+       "vegan"
+      ],
+      "ampel": "rot",
+      "co2_g": 77.0,
+      "co2_rating": "A",
+      "water_l": 1.77
      },
      {
       "group": "Suppen",
@@ -12906,24 +12910,6 @@
      },
      {
       "group": "Salate",
-      "name": "Kräuter-Dressing",
-      "price": null,
-      "codes": [
-       "28"
-      ],
-      "allergens": [
-       "Soja"
-      ],
-      "flags": [
-       "vegan"
-      ],
-      "ampel": "rot",
-      "co2_g": 77.0,
-      "co2_rating": "A",
-      "water_l": 1.77
-     },
-     {
-      "group": "Salate",
       "name": "Sauce Vinaigrette",
       "price": null,
       "codes": [
@@ -12959,6 +12945,24 @@
       "co2_g": 97.0,
       "co2_rating": "A",
       "water_l": 1.68
+     },
+     {
+      "group": "Salate",
+      "name": "Kräuter-Dressing",
+      "price": null,
+      "codes": [
+       "28"
+      ],
+      "allergens": [
+       "Soja"
+      ],
+      "flags": [
+       "vegan"
+      ],
+      "ampel": "rot",
+      "co2_g": 77.0,
+      "co2_rating": "A",
+      "water_l": 1.77
      },
      {
       "group": "Suppen",
@@ -13502,28 +13506,6 @@
      },
      {
       "group": "Beilagen",
-      "name": "Tomatenketchup",
-      "price": {
-       "student": 0.15,
-       "staff": 0.2,
-       "guest": 0.25
-      },
-      "codes": [
-       "29"
-      ],
-      "allergens": [
-       "Senf"
-      ],
-      "flags": [
-       "vegan"
-      ],
-      "ampel": "rot",
-      "co2_g": 48.0,
-      "co2_rating": "C",
-      "water_l": 0.03
-     },
-     {
-      "group": "Beilagen",
       "name": "Senf",
       "price": {
        "student": 0.15,
@@ -13543,6 +13525,28 @@
       "co2_g": 17.0,
       "co2_rating": "A",
       "water_l": 0.36
+     },
+     {
+      "group": "Beilagen",
+      "name": "Tomatenketchup",
+      "price": {
+       "student": 0.15,
+       "staff": 0.2,
+       "guest": 0.25
+      },
+      "codes": [
+       "29"
+      ],
+      "allergens": [
+       "Senf"
+      ],
+      "flags": [
+       "vegan"
+      ],
+      "ampel": "rot",
+      "co2_g": 48.0,
+      "co2_rating": "C",
+      "water_l": 0.03
      }
     ],
     "2026-11-18": [
@@ -13618,6 +13622,24 @@
      },
      {
       "group": "Salate",
+      "name": "Kräuter-Dressing",
+      "price": null,
+      "codes": [
+       "28"
+      ],
+      "allergens": [
+       "Soja"
+      ],
+      "flags": [
+       "vegan"
+      ],
+      "ampel": "rot",
+      "co2_g": 77.0,
+      "co2_rating": "A",
+      "water_l": 1.77
+     },
+     {
+      "group": "Salate",
       "name": "American-Dressing",
       "price": null,
       "codes": [
@@ -13635,24 +13657,6 @@
       "co2_g": 97.0,
       "co2_rating": "A",
       "water_l": 1.68
-     },
-     {
-      "group": "Salate",
-      "name": "Kräuter-Dressing",
-      "price": null,
-      "codes": [
-       "28"
-      ],
-      "allergens": [
-       "Soja"
-      ],
-      "flags": [
-       "vegan"
-      ],
-      "ampel": "rot",
-      "co2_g": 77.0,
-      "co2_rating": "A",
-      "water_l": 1.77
      },
      {
       "group": "Suppen",
@@ -13918,6 +13922,24 @@
      },
      {
       "group": "Salate",
+      "name": "Kräuter-Dressing",
+      "price": null,
+      "codes": [
+       "28"
+      ],
+      "allergens": [
+       "Soja"
+      ],
+      "flags": [
+       "vegan"
+      ],
+      "ampel": "rot",
+      "co2_g": 77.0,
+      "co2_rating": "A",
+      "water_l": 1.77
+     },
+     {
+      "group": "Salate",
       "name": "American-Dressing",
       "price": null,
       "codes": [
@@ -13935,24 +13957,6 @@
       "co2_g": 97.0,
       "co2_rating": "A",
       "water_l": 1.68
-     },
-     {
-      "group": "Salate",
-      "name": "Kräuter-Dressing",
-      "price": null,
-      "codes": [
-       "28"
-      ],
-      "allergens": [
-       "Soja"
-      ],
-      "flags": [
-       "vegan"
-      ],
-      "ampel": "rot",
-      "co2_g": 77.0,
-      "co2_rating": "A",
-      "water_l": 1.77
      },
      {
       "group": "Salate",
@@ -14018,36 +14022,6 @@
      },
      {
       "group": "Essen",
-      "name": "Eine Wirsingkohlroulade mit Hackfleischfüllung an Kümmeljus",
-      "price": {
-       "student": 2.45,
-       "staff": 4.9,
-       "guest": 5.65
-      },
-      "codes": [
-       "2",
-       "14",
-       "21a",
-       "27",
-       "36",
-       "29"
-      ],
-      "allergens": [
-       "Schweinefleisch bzw. mit Gelatine vom Schwein",
-       "mit zum Teil fein zerkleinertem Fleischanteil",
-       "Weizen",
-       "Sellerie",
-       "Hefe",
-       "Senf"
-      ],
-      "flags": [],
-      "ampel": "gruen",
-      "co2_g": 378.0,
-      "co2_rating": "B",
-      "water_l": 15.84
-     },
-     {
-      "group": "Essen",
       "name": "Zwei Dinkelbratlinge an Kräuterjus",
       "price": {
        "student": 2.45,
@@ -14077,6 +14051,36 @@
       "co2_g": 252.0,
       "co2_rating": "A",
       "water_l": 4.63
+     },
+     {
+      "group": "Essen",
+      "name": "Eine Wirsingkohlroulade mit Hackfleischfüllung an Kümmeljus",
+      "price": {
+       "student": 2.15,
+       "staff": 4.3,
+       "guest": 4.95
+      },
+      "codes": [
+       "2",
+       "14",
+       "21a",
+       "27",
+       "36",
+       "29"
+      ],
+      "allergens": [
+       "Schweinefleisch bzw. mit Gelatine vom Schwein",
+       "mit zum Teil fein zerkleinertem Fleischanteil",
+       "Weizen",
+       "Sellerie",
+       "Hefe",
+       "Senf"
+      ],
+      "flags": [],
+      "ampel": "gruen",
+      "co2_g": 378.0,
+      "co2_rating": "B",
+      "water_l": 15.84
      },
      {
       "group": "Essen",
@@ -14298,24 +14302,6 @@
      },
      {
       "group": "Salate",
-      "name": "Kräuter-Dressing",
-      "price": null,
-      "codes": [
-       "28"
-      ],
-      "allergens": [
-       "Soja"
-      ],
-      "flags": [
-       "vegan"
-      ],
-      "ampel": "rot",
-      "co2_g": 77.0,
-      "co2_rating": "A",
-      "water_l": 1.77
-     },
-     {
-      "group": "Salate",
       "name": "Sauce Vinaigrette",
       "price": null,
       "codes": [
@@ -14331,6 +14317,24 @@
       "co2_g": 67.0,
       "co2_rating": "A",
       "water_l": 1.33
+     },
+     {
+      "group": "Salate",
+      "name": "Kräuter-Dressing",
+      "price": null,
+      "codes": [
+       "28"
+      ],
+      "allergens": [
+       "Soja"
+      ],
+      "flags": [
+       "vegan"
+      ],
+      "ampel": "rot",
+      "co2_g": 77.0,
+      "co2_rating": "A",
+      "water_l": 1.77
      },
      {
       "group": "Suppen",
@@ -14880,24 +14884,6 @@
      },
      {
       "group": "Essen",
-      "name": "Kohlrabieintopf mit Kartoffeln, Kürbis und Spinat",
-      "price": {
-       "student": 1.75,
-       "staff": 3.5,
-       "guest": 4.05
-      },
-      "codes": [],
-      "allergens": [],
-      "flags": [
-       "vegan"
-      ],
-      "ampel": "gruen",
-      "co2_g": null,
-      "co2_rating": null,
-      "water_l": null
-     },
-     {
-      "group": "Essen",
       "name": "Kräuterquark mit Leinöl und Dampfkartoffeln",
       "price": {
        "student": 1.75,
@@ -14917,6 +14903,24 @@
       "co2_g": 836.0,
       "co2_rating": "B",
       "water_l": 30.89
+     },
+     {
+      "group": "Essen",
+      "name": "Kohlrabieintopf mit Kartoffeln, Kürbis und Spinat",
+      "price": {
+       "student": 1.75,
+       "staff": 3.5,
+       "guest": 4.05
+      },
+      "codes": [],
+      "allergens": [],
+      "flags": [
+       "vegan"
+      ],
+      "ampel": "gruen",
+      "co2_g": null,
+      "co2_rating": null,
+      "water_l": null
      },
      {
       "group": "Desserts",
@@ -14998,6 +15002,28 @@
      },
      {
       "group": "Essen",
+      "name": "Kräuterquark mit Leinöl und Dampfkartoffeln",
+      "price": {
+       "student": 1.75,
+       "staff": 3.5,
+       "guest": 4.05
+      },
+      "codes": [
+       "30"
+      ],
+      "allergens": [
+       "Milch und Milchprodukte (inkl. Laktose)"
+      ],
+      "flags": [
+       "vegetarisch"
+      ],
+      "ampel": "gruen",
+      "co2_g": null,
+      "co2_rating": null,
+      "water_l": null
+     },
+     {
+      "group": "Essen",
       "name": "Chili con Soja",
       "price": {
        "student": 1.75,
@@ -15014,28 +15040,6 @@
       ],
       "flags": [
        "vegan"
-      ],
-      "ampel": "gruen",
-      "co2_g": null,
-      "co2_rating": null,
-      "water_l": null
-     },
-     {
-      "group": "Essen",
-      "name": "Kräuterquark mit Leinöl und Dampfkartoffeln",
-      "price": {
-       "student": 1.75,
-       "staff": 3.5,
-       "guest": 4.05
-      },
-      "codes": [
-       "30"
-      ],
-      "allergens": [
-       "Milch und Milchprodukte (inkl. Laktose)"
-      ],
-      "flags": [
-       "vegetarisch"
       ],
       "ampel": "gruen",
       "co2_g": null,
@@ -16036,28 +16040,6 @@
      },
      {
       "group": "Desserts",
-      "name": "Veganer Joghurt mit Bananen",
-      "price": {
-       "student": 0.75,
-       "staff": 1.5,
-       "guest": 1.75
-      },
-      "codes": [
-       "28"
-      ],
-      "allergens": [
-       "Soja"
-      ],
-      "flags": [
-       "vegan"
-      ],
-      "ampel": "gruen",
-      "co2_g": 37.0,
-      "co2_rating": "A",
-      "water_l": 3.83
-     },
-     {
-      "group": "Desserts",
       "name": "Himbeer-Kokos-Quark",
       "price": {
        "student": 0.75,
@@ -16099,6 +16081,28 @@
       "co2_g": null,
       "co2_rating": null,
       "water_l": null
+     },
+     {
+      "group": "Desserts",
+      "name": "Veganer Joghurt mit Bananen",
+      "price": {
+       "student": 0.75,
+       "staff": 1.5,
+       "guest": 1.75
+      },
+      "codes": [
+       "28"
+      ],
+      "allergens": [
+       "Soja"
+      ],
+      "flags": [
+       "vegan"
+      ],
+      "ampel": "gruen",
+      "co2_g": 37.0,
+      "co2_rating": "A",
+      "water_l": 3.83
      },
      {
       "group": "Desserts",
@@ -16204,24 +16208,6 @@
      },
      {
       "group": "Salate",
-      "name": "Sauce Vinaigrette",
-      "price": null,
-      "codes": [
-       "29"
-      ],
-      "allergens": [
-       "Senf"
-      ],
-      "flags": [
-       "vegan"
-      ],
-      "ampel": "rot",
-      "co2_g": 67.0,
-      "co2_rating": "A",
-      "water_l": 1.33
-     },
-     {
-      "group": "Salate",
       "name": "Kräuter-Dressing",
       "price": null,
       "codes": [
@@ -16237,6 +16223,24 @@
       "co2_g": 77.0,
       "co2_rating": "A",
       "water_l": 1.77
+     },
+     {
+      "group": "Salate",
+      "name": "Sauce Vinaigrette",
+      "price": null,
+      "codes": [
+       "29"
+      ],
+      "allergens": [
+       "Senf"
+      ],
+      "flags": [
+       "vegan"
+      ],
+      "ampel": "rot",
+      "co2_g": 67.0,
+      "co2_rating": "A",
+      "water_l": 1.33
      },
      {
       "group": "Suppen",
@@ -16428,28 +16432,6 @@
      },
      {
       "group": "Desserts",
-      "name": "Pfirsichquark",
-      "price": {
-       "student": 0.75,
-       "staff": 1.5,
-       "guest": 1.75
-      },
-      "codes": [
-       "30"
-      ],
-      "allergens": [
-       "Milch und Milchprodukte (inkl. Laktose)"
-      ],
-      "flags": [
-       "vegetarisch"
-      ],
-      "ampel": "gelb",
-      "co2_g": null,
-      "co2_rating": null,
-      "water_l": null
-     },
-     {
-      "group": "Desserts",
       "name": "Stracciatellajoghurt",
       "price": {
        "student": 0.75,
@@ -16471,6 +16453,28 @@
       "co2_g": 248.0,
       "co2_rating": "B",
       "water_l": 4.37
+     },
+     {
+      "group": "Desserts",
+      "name": "Pfirsichquark",
+      "price": {
+       "student": 0.75,
+       "staff": 1.5,
+       "guest": 1.75
+      },
+      "codes": [
+       "30"
+      ],
+      "allergens": [
+       "Milch und Milchprodukte (inkl. Laktose)"
+      ],
+      "flags": [
+       "vegetarisch"
+      ],
+      "ampel": "gelb",
+      "co2_g": null,
+      "co2_rating": null,
+      "water_l": null
      },
      {
       "group": "Desserts",
@@ -16798,32 +16802,6 @@
      },
      {
       "group": "Desserts",
-      "name": "Cookiequark",
-      "price": {
-       "student": 0.75,
-       "staff": 1.5,
-       "guest": 1.75
-      },
-      "codes": [
-       "21a",
-       "23",
-       "30"
-      ],
-      "allergens": [
-       "Weizen",
-       "Eier",
-       "Milch und Milchprodukte (inkl. Laktose)"
-      ],
-      "flags": [
-       "vegetarisch"
-      ],
-      "ampel": "rot",
-      "co2_g": null,
-      "co2_rating": null,
-      "water_l": null
-     },
-     {
-      "group": "Desserts",
       "name": "Veganer Joghurt mit Brombeeren und Sonnenblumenkernen",
       "price": {
        "student": 0.75,
@@ -16861,6 +16839,32 @@
       "co2_g": 146.0,
       "co2_rating": "B",
       "water_l": 4.5
+     },
+     {
+      "group": "Desserts",
+      "name": "Cookiequark",
+      "price": {
+       "student": 0.75,
+       "staff": 1.5,
+       "guest": 1.75
+      },
+      "codes": [
+       "21a",
+       "23",
+       "30"
+      ],
+      "allergens": [
+       "Weizen",
+       "Eier",
+       "Milch und Milchprodukte (inkl. Laktose)"
+      ],
+      "flags": [
+       "vegetarisch"
+      ],
+      "ampel": "rot",
+      "co2_g": null,
+      "co2_rating": null,
+      "water_l": null
      },
      {
       "group": "Desserts",
@@ -16966,24 +16970,6 @@
      },
      {
       "group": "Salate",
-      "name": "Sauce Vinaigrette",
-      "price": null,
-      "codes": [
-       "29"
-      ],
-      "allergens": [
-       "Senf"
-      ],
-      "flags": [
-       "vegan"
-      ],
-      "ampel": "rot",
-      "co2_g": 67.0,
-      "co2_rating": "A",
-      "water_l": 1.33
-     },
-     {
-      "group": "Salate",
       "name": "Kräuter-Dressing",
       "price": null,
       "codes": [
@@ -16999,6 +16985,24 @@
       "co2_g": 77.0,
       "co2_rating": "A",
       "water_l": 1.77
+     },
+     {
+      "group": "Salate",
+      "name": "Sauce Vinaigrette",
+      "price": null,
+      "codes": [
+       "29"
+      ],
+      "allergens": [
+       "Senf"
+      ],
+      "flags": [
+       "vegan"
+      ],
+      "ampel": "rot",
+      "co2_g": 67.0,
+      "co2_rating": "A",
+      "water_l": 1.33
      },
      {
       "group": "Suppen",
@@ -17186,6 +17190,28 @@
      },
      {
       "group": "Desserts",
+      "name": "Veganer Joghurt mit Heidelbeeren und Mandeln",
+      "price": {
+       "student": 0.75,
+       "staff": 1.5,
+       "guest": 1.75
+      },
+      "codes": [
+       "26a"
+      ],
+      "allergens": [
+       "Mandeln"
+      ],
+      "flags": [
+       "vegan"
+      ],
+      "ampel": "gruen",
+      "co2_g": 54.0,
+      "co2_rating": "A",
+      "water_l": 50.11
+     },
+     {
+      "group": "Desserts",
       "name": "Heidelbeerquark mit Sonnenblumenkernen",
       "price": {
        "student": 0.75,
@@ -17227,28 +17253,6 @@
       "co2_g": null,
       "co2_rating": null,
       "water_l": null
-     },
-     {
-      "group": "Desserts",
-      "name": "Veganer Joghurt mit Heidelbeeren und Mandeln",
-      "price": {
-       "student": 0.75,
-       "staff": 1.5,
-       "guest": 1.75
-      },
-      "codes": [
-       "26a"
-      ],
-      "allergens": [
-       "Mandeln"
-      ],
-      "flags": [
-       "vegan"
-      ],
-      "ampel": "gruen",
-      "co2_g": 54.0,
-      "co2_rating": "A",
-      "water_l": 50.11
      },
      {
       "group": "Desserts",
@@ -17326,24 +17330,6 @@
      },
      {
       "group": "Salate",
-      "name": "Sauce Vinaigrette",
-      "price": null,
-      "codes": [
-       "29"
-      ],
-      "allergens": [
-       "Senf"
-      ],
-      "flags": [
-       "vegan"
-      ],
-      "ampel": "rot",
-      "co2_g": 67.0,
-      "co2_rating": "A",
-      "water_l": 1.33
-     },
-     {
-      "group": "Salate",
       "name": "Kräuter-Dressing",
       "price": null,
       "codes": [
@@ -17359,6 +17345,24 @@
       "co2_g": 77.0,
       "co2_rating": "A",
       "water_l": 1.77
+     },
+     {
+      "group": "Salate",
+      "name": "Sauce Vinaigrette",
+      "price": null,
+      "codes": [
+       "29"
+      ],
+      "allergens": [
+       "Senf"
+      ],
+      "flags": [
+       "vegan"
+      ],
+      "ampel": "rot",
+      "co2_g": 67.0,
+      "co2_rating": "A",
+      "water_l": 1.33
      },
      {
       "group": "Suppen",
@@ -17426,9 +17430,9 @@
        "vegan"
       ],
       "ampel": "gruen",
-      "co2_g": 240.0,
+      "co2_g": 233.0,
       "co2_rating": "A",
-      "water_l": 18.99
+      "water_l": 16.69
      },
      {
       "group": "Beilagen",
@@ -17544,6 +17548,24 @@
      },
      {
       "group": "Desserts",
+      "name": "Veganer Joghurt mit Himbeeren",
+      "price": {
+       "student": 0.75,
+       "staff": 1.5,
+       "guest": 1.75
+      },
+      "codes": [],
+      "allergens": [],
+      "flags": [
+       "vegan"
+      ],
+      "ampel": "gruen",
+      "co2_g": 45.0,
+      "co2_rating": "A",
+      "water_l": 3.84
+     },
+     {
+      "group": "Desserts",
       "name": "Mohnjoghurt mit Mandarinen",
       "price": {
        "student": 0.75,
@@ -17565,24 +17587,6 @@
       "co2_g": 157.0,
       "co2_rating": "B",
       "water_l": 7.5
-     },
-     {
-      "group": "Desserts",
-      "name": "Veganer Joghurt mit Himbeeren",
-      "price": {
-       "student": 0.75,
-       "staff": 1.5,
-       "guest": 1.75
-      },
-      "codes": [],
-      "allergens": [],
-      "flags": [
-       "vegan"
-      ],
-      "ampel": "gruen",
-      "co2_g": 45.0,
-      "co2_rating": "A",
-      "water_l": 3.84
      },
      {
       "group": "Desserts",
@@ -17696,24 +17700,6 @@
      },
      {
       "group": "Salate",
-      "name": "Kräuter-Dressing",
-      "price": null,
-      "codes": [
-       "28"
-      ],
-      "allergens": [
-       "Soja"
-      ],
-      "flags": [
-       "vegan"
-      ],
-      "ampel": "rot",
-      "co2_g": 77.0,
-      "co2_rating": "A",
-      "water_l": 1.77
-     },
-     {
-      "group": "Salate",
       "name": "Sauce Vinaigrette",
       "price": null,
       "codes": [
@@ -17729,6 +17715,24 @@
       "co2_g": 67.0,
       "co2_rating": "A",
       "water_l": 1.33
+     },
+     {
+      "group": "Salate",
+      "name": "Kräuter-Dressing",
+      "price": null,
+      "codes": [
+       "28"
+      ],
+      "allergens": [
+       "Soja"
+      ],
+      "flags": [
+       "vegan"
+      ],
+      "ampel": "rot",
+      "co2_g": 77.0,
+      "co2_rating": "A",
+      "water_l": 1.77
      },
      {
       "group": "Suppen",
@@ -17784,32 +17788,6 @@
      },
      {
       "group": "Essen",
-      "name": "Paprikaschote mit Gemüsefüllung an Tomatensauce",
-      "price": {
-       "student": 2.45,
-       "staff": 4.9,
-       "guest": 5.65
-      },
-      "codes": [
-       "21a",
-       "27",
-       "29"
-      ],
-      "allergens": [
-       "Weizen",
-       "Sellerie",
-       "Senf"
-      ],
-      "flags": [
-       "vegan"
-      ],
-      "ampel": "gruen",
-      "co2_g": 150.0,
-      "co2_rating": "B",
-      "water_l": 7.06
-     },
-     {
-      "group": "Essen",
       "name": "Kartoffel-Kürbiscurry mit Kokosmlich, Ingwer und Zitronengras",
       "price": {
        "student": 1.75,
@@ -17830,9 +17808,9 @@
        "vegan"
       ],
       "ampel": "gelb",
-      "co2_g": 220.0,
+      "co2_g": 213.0,
       "co2_rating": "A",
-      "water_l": 10.9
+      "water_l": 11.06
      },
      {
       "group": "Beilagen",
@@ -17948,28 +17926,6 @@
      },
      {
       "group": "Desserts",
-      "name": "Mandarinenquark",
-      "price": {
-       "student": 0.75,
-       "staff": 1.5,
-       "guest": 1.75
-      },
-      "codes": [
-       "30"
-      ],
-      "allergens": [
-       "Milch und Milchprodukte (inkl. Laktose)"
-      ],
-      "flags": [
-       "vegetarisch"
-      ],
-      "ampel": "gelb",
-      "co2_g": 342.0,
-      "co2_rating": "B",
-      "water_l": 13.16
-     },
-     {
-      "group": "Desserts",
       "name": "Apfel-Zimt-Joghurt",
       "price": {
        "student": 0.75,
@@ -17991,6 +17947,28 @@
       "co2_g": 155.0,
       "co2_rating": "B",
       "water_l": 4.58
+     },
+     {
+      "group": "Desserts",
+      "name": "Mandarinenquark",
+      "price": {
+       "student": 0.75,
+       "staff": 1.5,
+       "guest": 1.75
+      },
+      "codes": [
+       "30"
+      ],
+      "allergens": [
+       "Milch und Milchprodukte (inkl. Laktose)"
+      ],
+      "flags": [
+       "vegetarisch"
+      ],
+      "ampel": "gelb",
+      "co2_g": 342.0,
+      "co2_rating": "B",
+      "water_l": 13.16
      },
      {
       "group": "Desserts",
@@ -18088,24 +18066,6 @@
      },
      {
       "group": "Salate",
-      "name": "Sauce Vinaigrette",
-      "price": null,
-      "codes": [
-       "29"
-      ],
-      "allergens": [
-       "Senf"
-      ],
-      "flags": [
-       "vegan"
-      ],
-      "ampel": "rot",
-      "co2_g": 67.0,
-      "co2_rating": "A",
-      "water_l": 1.33
-     },
-     {
-      "group": "Salate",
       "name": "Kräuter-Dressing",
       "price": null,
       "codes": [
@@ -18121,6 +18081,24 @@
       "co2_g": 77.0,
       "co2_rating": "A",
       "water_l": 1.77
+     },
+     {
+      "group": "Salate",
+      "name": "Sauce Vinaigrette",
+      "price": null,
+      "codes": [
+       "29"
+      ],
+      "allergens": [
+       "Senf"
+      ],
+      "flags": [
+       "vegan"
+      ],
+      "ampel": "rot",
+      "co2_g": 67.0,
+      "co2_rating": "A",
+      "water_l": 1.33
      },
      {
       "group": "Suppen",
@@ -18186,9 +18164,9 @@
       ],
       "flags": [],
       "ampel": "gruen",
-      "co2_g": 254.0,
+      "co2_g": 252.0,
       "co2_rating": "A",
-      "water_l": 10.87
+      "water_l": 10.34
      },
      {
       "group": "Beilagen",
@@ -18322,30 +18300,6 @@
      },
      {
       "group": "Desserts",
-      "name": "Joghurt mit Honig und Sesam",
-      "price": {
-       "student": 0.75,
-       "staff": 1.5,
-       "guest": 1.75
-      },
-      "codes": [
-       "30",
-       "31"
-      ],
-      "allergens": [
-       "Milch und Milchprodukte (inkl. Laktose)",
-       "Sesam"
-      ],
-      "flags": [
-       "vegetarisch"
-      ],
-      "ampel": "gelb",
-      "co2_g": 190.0,
-      "co2_rating": "B",
-      "water_l": 8.46
-     },
-     {
-      "group": "Desserts",
       "name": "Heidelbeerquark mit Sonnenblumenkernen",
       "price": {
        "student": 0.75,
@@ -18383,6 +18337,30 @@
       "co2_g": 42.0,
       "co2_rating": "A",
       "water_l": 5.53
+     },
+     {
+      "group": "Desserts",
+      "name": "Joghurt mit Honig und Sesam",
+      "price": {
+       "student": 0.75,
+       "staff": 1.5,
+       "guest": 1.75
+      },
+      "codes": [
+       "30",
+       "31"
+      ],
+      "allergens": [
+       "Milch und Milchprodukte (inkl. Laktose)",
+       "Sesam"
+      ],
+      "flags": [
+       "vegetarisch"
+      ],
+      "ampel": "gelb",
+      "co2_g": 190.0,
+      "co2_rating": "B",
+      "water_l": 8.46
      }
     ],
     "2026-11-19": [
@@ -18440,24 +18418,6 @@
      },
      {
       "group": "Salate",
-      "name": "Kräuter-Dressing",
-      "price": null,
-      "codes": [
-       "28"
-      ],
-      "allergens": [
-       "Soja"
-      ],
-      "flags": [
-       "vegan"
-      ],
-      "ampel": "rot",
-      "co2_g": 77.0,
-      "co2_rating": "A",
-      "water_l": 1.77
-     },
-     {
-      "group": "Salate",
       "name": "Sauce Vinaigrette",
       "price": null,
       "codes": [
@@ -18473,6 +18433,24 @@
       "co2_g": 67.0,
       "co2_rating": "A",
       "water_l": 1.33
+     },
+     {
+      "group": "Salate",
+      "name": "Kräuter-Dressing",
+      "price": null,
+      "codes": [
+       "28"
+      ],
+      "allergens": [
+       "Soja"
+      ],
+      "flags": [
+       "vegan"
+      ],
+      "ampel": "rot",
+      "co2_g": 77.0,
+      "co2_rating": "A",
+      "water_l": 1.77
      },
      {
       "group": "Suppen",
@@ -18568,9 +18546,9 @@
        "vegan"
       ],
       "ampel": "gruen",
-      "co2_g": 150.0,
+      "co2_g": 142.0,
       "co2_rating": "A",
-      "water_l": 6.74
+      "water_l": 6.08
      },
      {
       "group": "Beilagen",
@@ -18832,24 +18810,6 @@
      },
      {
       "group": "Salate",
-      "name": "Kräuter-Dressing",
-      "price": null,
-      "codes": [
-       "28"
-      ],
-      "allergens": [
-       "Soja"
-      ],
-      "flags": [
-       "vegan"
-      ],
-      "ampel": "rot",
-      "co2_g": 77.0,
-      "co2_rating": "A",
-      "water_l": 1.77
-     },
-     {
-      "group": "Salate",
       "name": "Sauce Vinaigrette",
       "price": null,
       "codes": [
@@ -18865,6 +18825,24 @@
       "co2_g": 67.0,
       "co2_rating": "A",
       "water_l": 1.33
+     },
+     {
+      "group": "Salate",
+      "name": "Kräuter-Dressing",
+      "price": null,
+      "codes": [
+       "28"
+      ],
+      "allergens": [
+       "Soja"
+      ],
+      "flags": [
+       "vegan"
+      ],
+      "ampel": "rot",
+      "co2_g": 77.0,
+      "co2_rating": "A",
+      "water_l": 1.77
      },
      {
       "group": "Suppen",
@@ -19048,24 +19026,6 @@
      },
      {
       "group": "Desserts",
-      "name": "Veganer Joghurt mit Waldbeeren",
-      "price": {
-       "student": 0.75,
-       "staff": 1.5,
-       "guest": 1.75
-      },
-      "codes": [],
-      "allergens": [],
-      "flags": [
-       "vegan"
-      ],
-      "ampel": "gelb",
-      "co2_g": 43.0,
-      "co2_rating": "A",
-      "water_l": 3.93
-     },
-     {
-      "group": "Desserts",
       "name": "Mandel-Rosinen-Quark",
       "price": {
        "student": 0.75,
@@ -19113,6 +19073,24 @@
       "co2_g": 170.0,
       "co2_rating": "B",
       "water_l": 10.08
+     },
+     {
+      "group": "Desserts",
+      "name": "Veganer Joghurt mit Waldbeeren",
+      "price": {
+       "student": 0.75,
+       "staff": 1.5,
+       "guest": 1.75
+      },
+      "codes": [],
+      "allergens": [],
+      "flags": [
+       "vegan"
+      ],
+      "ampel": "gelb",
+      "co2_g": 43.0,
+      "co2_rating": "A",
+      "water_l": 3.93
      },
      {
       "group": "Desserts",
@@ -19270,28 +19248,6 @@
      },
      {
       "group": "Essen",
-      "name": "Brew Bites in Tomaten-Paprika-Sauce",
-      "price": {
-       "student": 2.15,
-       "staff": 4.3,
-       "guest": 4.95
-      },
-      "codes": [
-       "21c"
-      ],
-      "allergens": [
-       "Gerste"
-      ],
-      "flags": [
-       "vegan"
-      ],
-      "ampel": "gruen",
-      "co2_g": null,
-      "co2_rating": null,
-      "water_l": null
-     },
-     {
-      "group": "Essen",
       "name": "3 Gemüsebällchen an fruchtiger Tomatensauce",
       "price": {
        "student": 2.15,
@@ -19313,6 +19269,28 @@
       "co2_g": 274.0,
       "co2_rating": "A",
       "water_l": 5.89
+     },
+     {
+      "group": "Essen",
+      "name": "Brew Bites in Tomaten-Paprika-Sauce",
+      "price": {
+       "student": 2.15,
+       "staff": 4.3,
+       "guest": 4.95
+      },
+      "codes": [
+       "21c"
+      ],
+      "allergens": [
+       "Gerste"
+      ],
+      "flags": [
+       "vegan"
+      ],
+      "ampel": "gruen",
+      "co2_g": null,
+      "co2_rating": null,
+      "water_l": null
      },
      {
       "group": "Essen",
@@ -19770,28 +19748,6 @@
      },
      {
       "group": "Desserts",
-      "name": "Ananasquark",
-      "price": {
-       "student": 0.75,
-       "staff": 1.5,
-       "guest": 1.75
-      },
-      "codes": [
-       "30"
-      ],
-      "allergens": [
-       "Milch und Milchprodukte (inkl. Laktose)"
-      ],
-      "flags": [
-       "vegetarisch"
-      ],
-      "ampel": "rot",
-      "co2_g": 298.0,
-      "co2_rating": "B",
-      "water_l": 9.93
-     },
-     {
-      "group": "Desserts",
       "name": "Kirschjoghurt",
       "price": {
        "student": 0.75,
@@ -19811,6 +19767,28 @@
       "co2_g": 174.0,
       "co2_rating": "B",
       "water_l": 9.18
+     },
+     {
+      "group": "Desserts",
+      "name": "Ananasquark",
+      "price": {
+       "student": 0.75,
+       "staff": 1.5,
+       "guest": 1.75
+      },
+      "codes": [
+       "30"
+      ],
+      "allergens": [
+       "Milch und Milchprodukte (inkl. Laktose)"
+      ],
+      "flags": [
+       "vegetarisch"
+      ],
+      "ampel": "rot",
+      "co2_g": 298.0,
+      "co2_rating": "B",
+      "water_l": 9.93
      },
      {
       "group": "Desserts",
@@ -20042,30 +20020,6 @@
      },
      {
       "group": "Desserts",
-      "name": "Stracciatellajoghurt",
-      "price": {
-       "student": 0.75,
-       "staff": 1.5,
-       "guest": 1.75
-      },
-      "codes": [
-       "28",
-       "30"
-      ],
-      "allergens": [
-       "Soja",
-       "Milch und Milchprodukte (inkl. Laktose)"
-      ],
-      "flags": [
-       "vegetarisch"
-      ],
-      "ampel": "gruen",
-      "co2_g": 248.0,
-      "co2_rating": "B",
-      "water_l": 4.37
-     },
-     {
-      "group": "Desserts",
       "name": "Pfirsich Quark",
       "price": {
        "student": 0.75,
@@ -20087,6 +20041,30 @@
       "co2_g": 432.0,
       "co2_rating": "B",
       "water_l": 35.12
+     },
+     {
+      "group": "Desserts",
+      "name": "Stracciatellajoghurt",
+      "price": {
+       "student": 0.75,
+       "staff": 1.5,
+       "guest": 1.75
+      },
+      "codes": [
+       "28",
+       "30"
+      ],
+      "allergens": [
+       "Soja",
+       "Milch und Milchprodukte (inkl. Laktose)"
+      ],
+      "flags": [
+       "vegetarisch"
+      ],
+      "ampel": "gruen",
+      "co2_g": 248.0,
+      "co2_rating": "B",
+      "water_l": 4.37
      },
      {
       "group": "Desserts",
@@ -20416,6 +20394,28 @@
      },
      {
       "group": "Desserts",
+      "name": "Heidelbeerjoghurt",
+      "price": {
+       "student": 0.75,
+       "staff": 1.5,
+       "guest": 1.75
+      },
+      "codes": [
+       "30"
+      ],
+      "allergens": [
+       "Milch und Milchprodukte (inkl. Laktose)"
+      ],
+      "flags": [
+       "vegetarisch"
+      ],
+      "ampel": "gruen",
+      "co2_g": 146.0,
+      "co2_rating": "B",
+      "water_l": 4.5
+     },
+     {
+      "group": "Desserts",
       "name": "Rhababerquark mit Mandeln",
       "price": {
        "student": 0.75,
@@ -20437,28 +20437,6 @@
       "co2_g": 328.0,
       "co2_rating": "B",
       "water_l": 10.2
-     },
-     {
-      "group": "Desserts",
-      "name": "Heidelbeerjoghurt",
-      "price": {
-       "student": 0.75,
-       "staff": 1.5,
-       "guest": 1.75
-      },
-      "codes": [
-       "30"
-      ],
-      "allergens": [
-       "Milch und Milchprodukte (inkl. Laktose)"
-      ],
-      "flags": [
-       "vegetarisch"
-      ],
-      "ampel": "gruen",
-      "co2_g": 146.0,
-      "co2_rating": "B",
-      "water_l": 4.5
      },
      {
       "group": "Desserts",
@@ -20666,32 +20644,6 @@
      },
      {
       "group": "Essen",
-      "name": "Vier Eierpfannkuchen mit Apfelmus",
-      "price": {
-       "student": 1.75,
-       "staff": 3.5,
-       "guest": 4.05
-      },
-      "codes": [
-       "21a",
-       "23",
-       "30"
-      ],
-      "allergens": [
-       "Weizen",
-       "Eier",
-       "Milch und Milchprodukte (inkl. Laktose)"
-      ],
-      "flags": [
-       "vegetarisch"
-      ],
-      "ampel": "rot",
-      "co2_g": 503.0,
-      "co2_rating": "A",
-      "water_l": 13.98
-     },
-     {
-      "group": "Essen",
       "name": "Kartoffel-Gemüse-Auflauf mit Käse überbacken",
       "price": {
        "student": 1.75,
@@ -20715,6 +20667,32 @@
       "co2_g": null,
       "co2_rating": null,
       "water_l": null
+     },
+     {
+      "group": "Essen",
+      "name": "Vier Eierpfannkuchen mit Apfelmus",
+      "price": {
+       "student": 1.75,
+       "staff": 3.5,
+       "guest": 4.05
+      },
+      "codes": [
+       "21a",
+       "23",
+       "30"
+      ],
+      "allergens": [
+       "Weizen",
+       "Eier",
+       "Milch und Milchprodukte (inkl. Laktose)"
+      ],
+      "flags": [
+       "vegetarisch"
+      ],
+      "ampel": "rot",
+      "co2_g": 503.0,
+      "co2_rating": "A",
+      "water_l": 13.98
      },
      {
       "group": "Beilagen",
@@ -21454,6 +21432,28 @@
      },
      {
       "group": "Desserts",
+      "name": "Mandarinenquark",
+      "price": {
+       "student": 0.75,
+       "staff": 1.5,
+       "guest": 1.75
+      },
+      "codes": [
+       "30"
+      ],
+      "allergens": [
+       "Milch und Milchprodukte (inkl. Laktose)"
+      ],
+      "flags": [
+       "vegetarisch"
+      ],
+      "ampel": "gelb",
+      "co2_g": 342.0,
+      "co2_rating": "B",
+      "water_l": 13.16
+     },
+     {
+      "group": "Desserts",
       "name": "Apfel-Zimt-Joghurt",
       "price": {
        "student": 0.75,
@@ -21475,28 +21475,6 @@
       "co2_g": 155.0,
       "co2_rating": "B",
       "water_l": 4.58
-     },
-     {
-      "group": "Desserts",
-      "name": "Mandarinenquark",
-      "price": {
-       "student": 0.75,
-       "staff": 1.5,
-       "guest": 1.75
-      },
-      "codes": [
-       "30"
-      ],
-      "allergens": [
-       "Milch und Milchprodukte (inkl. Laktose)"
-      ],
-      "flags": [
-       "vegetarisch"
-      ],
-      "ampel": "gelb",
-      "co2_g": 342.0,
-      "co2_rating": "B",
-      "water_l": 13.16
      },
      {
       "group": "Desserts",
@@ -22106,6 +22084,28 @@
      },
      {
       "group": "Desserts",
+      "name": "Waldbeerjoghurt",
+      "price": {
+       "student": 0.75,
+       "staff": 1.5,
+       "guest": 1.75
+      },
+      "codes": [
+       "30"
+      ],
+      "allergens": [
+       "Milch und Milchprodukte (inkl. Laktose)"
+      ],
+      "flags": [
+       "vegetarisch"
+      ],
+      "ampel": "gruen",
+      "co2_g": 151.0,
+      "co2_rating": "B",
+      "water_l": 4.66
+     },
+     {
+      "group": "Desserts",
       "name": "Pflaumenquark mit Haselnüssen",
       "price": {
        "student": 0.75,
@@ -22127,28 +22127,6 @@
       "co2_g": 367.0,
       "co2_rating": "B",
       "water_l": 13.53
-     },
-     {
-      "group": "Desserts",
-      "name": "Waldbeerjoghurt",
-      "price": {
-       "student": 0.75,
-       "staff": 1.5,
-       "guest": 1.75
-      },
-      "codes": [
-       "30"
-      ],
-      "allergens": [
-       "Milch und Milchprodukte (inkl. Laktose)"
-      ],
-      "flags": [
-       "vegetarisch"
-      ],
-      "ampel": "gruen",
-      "co2_g": 151.0,
-      "co2_rating": "B",
-      "water_l": 4.66
      },
      {
       "group": "Desserts",
@@ -22424,6 +22402,28 @@
      },
      {
       "group": "Desserts",
+      "name": "Bananenquark mit Honig",
+      "price": {
+       "student": 0.75,
+       "staff": 1.5,
+       "guest": 1.75
+      },
+      "codes": [
+       "30"
+      ],
+      "allergens": [
+       "Milch und Milchprodukte (inkl. Laktose)"
+      ],
+      "flags": [
+       "vegetarisch"
+      ],
+      "ampel": "gelb",
+      "co2_g": 374.0,
+      "co2_rating": "B",
+      "water_l": 12.4
+     },
+     {
+      "group": "Desserts",
       "name": "Birnen-Hafer-Joghurt",
       "price": {
        "student": 0.75,
@@ -22447,28 +22447,6 @@
       "co2_g": 170.0,
       "co2_rating": "B",
       "water_l": 10.08
-     },
-     {
-      "group": "Desserts",
-      "name": "Bananenquark mit Honig",
-      "price": {
-       "student": 0.75,
-       "staff": 1.5,
-       "guest": 1.75
-      },
-      "codes": [
-       "30"
-      ],
-      "allergens": [
-       "Milch und Milchprodukte (inkl. Laktose)"
-      ],
-      "flags": [
-       "vegetarisch"
-      ],
-      "ampel": "gelb",
-      "co2_g": 374.0,
-      "co2_rating": "B",
-      "water_l": 12.4
      }
     ]
    }
